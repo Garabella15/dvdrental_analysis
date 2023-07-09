@@ -77,6 +77,15 @@ sources:
               tests:
                 - unique
                 - not_null
+      
+      - name: category 
+        description: "A starter dbt model"
+        columns:
+            - name: category_id
+              description: "The primary key for this table"
+              tests:
+                - unique
+                - not_null
           
       - name: rental
         description: "A starter dbt model"
