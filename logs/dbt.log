@@ -1,0 +1,696 @@
+[0m15:57:22.898811 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:57:22.916812 | c32e5f64-629f-4929-8fec-504448b63378 ==============================
+[0m15:57:22.916812 [info ] [MainThread]: Running with dbt=1.5.2
+[0m15:57:22.917814 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dbt_core\\dbt-core\\ray_dbt_project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:57:22.918812 [info ] [MainThread]: dbt version: 1.5.2
+[0m15:57:22.919820 [info ] [MainThread]: python version: 3.10.11
+[0m15:57:22.920833 [info ] [MainThread]: python path: C:\Users\RaymondOwhondah\Desktop\Analytics Engineering Fundamentals\dbt_core\dbt_venv\Scripts\python.exe
+[0m15:57:22.921817 [info ] [MainThread]: os info: Windows-10-10.0.22000-SP0
+[0m15:57:22.922814 [info ] [MainThread]: Using profiles.yml file at C:\Users\RaymondOwhondah\.dbt\profiles.yml
+[0m15:57:22.923825 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\RaymondOwhondah\Desktop\Analytics Engineering Fundamentals\dbt_core\dbt-core\ray_dbt_project\dbt_project.yml
+[0m15:57:22.925828 [info ] [MainThread]: Configuration:
+[0m15:57:22.931812 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m15:57:22.945812 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m15:57:22.946816 [info ] [MainThread]: Required dependencies:
+[0m15:57:22.947821 [debug] [MainThread]: Executing "git --help"
+[0m15:57:23.005825 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:57:23.005825 [debug] [MainThread]: STDERR: "b''"
+[0m15:57:23.006812 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:57:23.007812 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:57:23.007812 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  at path ['name']: 'dvdrental_project:' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in C:\Users\RaymondOwhondah\Desktop\Analytics Engineering Fundamentals\dbt_core\dbt-core\ray_dbt_project\dbt_project.yml
+
+
+[0m15:57:23.009819 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'dvdrental_project:'
+
+
+[0m15:57:23.014816 [debug] [MainThread]: Command `dbt debug` failed at 15:57:23.014816 after 0.14 seconds
+[0m15:57:23.015824 [debug] [MainThread]: Flushing usage events
+[0m15:59:20.176446 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:59:20.190448 | e0c53c5e-bfbf-432b-8299-17d0373473b7 ==============================
+[0m15:59:20.190448 [info ] [MainThread]: Running with dbt=1.5.2
+[0m15:59:20.191447 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dbt_core\\dbt-core\\ray_dbt_project\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:59:20.192449 [info ] [MainThread]: dbt version: 1.5.2
+[0m15:59:20.193451 [info ] [MainThread]: python version: 3.10.11
+[0m15:59:20.194452 [info ] [MainThread]: python path: C:\Users\RaymondOwhondah\Desktop\Analytics Engineering Fundamentals\dbt_core\dbt_venv\Scripts\python.exe
+[0m15:59:20.194452 [info ] [MainThread]: os info: Windows-10-10.0.22000-SP0
+[0m15:59:20.195447 [info ] [MainThread]: Using profiles.yml file at C:\Users\RaymondOwhondah\.dbt\profiles.yml
+[0m15:59:20.197448 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\RaymondOwhondah\Desktop\Analytics Engineering Fundamentals\dbt_core\dbt-core\ray_dbt_project\dbt_project.yml
+[0m15:59:20.198475 [info ] [MainThread]: Configuration:
+[0m15:59:20.464243 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:59:20.484240 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:59:20.485240 [info ] [MainThread]: Required dependencies:
+[0m15:59:20.486241 [debug] [MainThread]: Executing "git --help"
+[0m15:59:20.528240 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:59:20.528240 [debug] [MainThread]: STDERR: "b''"
+[0m15:59:20.529239 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:59:20.529239 [info ] [MainThread]: Connection:
+[0m15:59:20.530240 [info ] [MainThread]:   account: lkzbnau-dx41248
+[0m15:59:20.531240 [info ] [MainThread]:   user: GEEMAN347
+[0m15:59:20.531240 [info ] [MainThread]:   database: DVDRENTAL_DEV
+[0m15:59:20.532240 [info ] [MainThread]:   schema: DEV
+[0m15:59:20.533238 [info ] [MainThread]:   warehouse: TRANSFORMER
+[0m15:59:20.533238 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m15:59:20.535241 [info ] [MainThread]:   client_session_keep_alive: False
+[0m15:59:20.536239 [info ] [MainThread]:   query_tag: None
+[0m15:59:20.537241 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m15:59:20.539243 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m15:59:20.541244 [debug] [MainThread]: Using snowflake connection "debug"
+[0m15:59:20.542240 [debug] [MainThread]: On debug: select 1 as id
+[0m15:59:20.543241 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:59:23.996700 [debug] [MainThread]: SQL status: SUCCESS 1 in 3.0 seconds
+[0m15:59:23.997700 [debug] [MainThread]: On debug: Close
+[0m15:59:24.058734 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:59:24.059701 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:59:24.061718 [debug] [MainThread]: Command `dbt debug` succeeded at 15:59:24.061718 after 3.89 seconds
+[0m15:59:24.062702 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:59:24.062702 [debug] [MainThread]: Flushing usage events
+[0m16:11:33.399922 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 16:11:33.416959 | 75efa9de-c641-4b1f-99cc-d5745c46e47a ==============================
+[0m16:11:33.416959 [info ] [MainThread]: Running with dbt=1.5.2
+[0m16:11:33.417971 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dbt_core\\dbt-core\\ray_dbt_project\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:11:33.723964 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m16:11:33.737959 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m16:11:33.757957 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m16:11:33.758922 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m16:11:34.576529 [debug] [MainThread]: 1603: static parser failed on analytics\top_loyal_customers.sql
+[0m16:11:34.591530 [debug] [MainThread]: 1602: parser fallback to jinja rendering on analytics\top_loyal_customers.sql
+[0m16:11:34.759496 [info ] [MainThread]: Found 1 model, 28 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 14 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:11:34.762498 [info ] [MainThread]: 
+[0m16:11:34.763521 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:11:34.765531 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV'
+[0m16:11:34.780521 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV"
+[0m16:11:34.781493 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV"} */
+show terse schemas in database DVDRENTAL_DEV
+    limit 10000
+[0m16:11:34.781493 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:11:35.726513 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:11:35.735750 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: Close
+[0m16:11:35.804766 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV_DEV'
+[0m16:11:35.810719 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV_DEV"
+[0m16:11:35.811757 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV_DEV"} */
+show terse objects in DVDRENTAL_DEV.DEV
+[0m16:11:35.812758 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:11:36.357204 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m16:11:36.359196 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: Close
+[0m16:11:36.443252 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:11:36.444199 [info ] [MainThread]: 
+[0m16:11:36.457211 [debug] [Thread-1 (]: Began running node model.dvdrental_project.top_loyal_customers
+[0m16:11:36.458195 [info ] [Thread-1 (]: 1 of 1 START sql tables model DEV.top_loyal_customers .......................... [RUN]
+[0m16:11:36.459194 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dvdrental_project.top_loyal_customers'
+[0m16:11:36.460195 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.top_loyal_customers
+[0m16:11:36.464194 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.top_loyal_customers"
+[0m16:11:36.466199 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (compile): 16:11:36.460195 => 16:11:36.466199
+[0m16:11:36.467195 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.top_loyal_customers
+[0m16:11:36.470195 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (execute): 16:11:36.468194 => 16:11:36.469194
+[0m16:11:36.491195 [debug] [Thread-1 (]: Compilation Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)
+  No materialization 'tables' was found for adapter snowflake! (searched types 'default' and 'snowflake')
+[0m16:11:36.493201 [error] [Thread-1 (]: 1 of 1 ERROR creating sql tables model DEV.top_loyal_customers ................. [[31mERROR[0m in 0.03s]
+[0m16:11:36.495196 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.top_loyal_customers
+[0m16:11:36.498194 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:11:36.499197 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV' was properly closed.
+[0m16:11:36.499197 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV_DEV' was properly closed.
+[0m16:11:36.500201 [debug] [MainThread]: Connection 'model.dvdrental_project.top_loyal_customers' was properly closed.
+[0m16:11:36.501194 [info ] [MainThread]: 
+[0m16:11:36.502196 [info ] [MainThread]: Finished running 1 tables model in 0 hours 0 minutes and 1.74 seconds (1.74s).
+[0m16:11:36.505202 [debug] [MainThread]: Command end result
+[0m16:11:36.520196 [info ] [MainThread]: 
+[0m16:11:36.522195 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:11:36.523196 [info ] [MainThread]: 
+[0m16:11:36.524220 [error] [MainThread]: [33mCompilation Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)[0m
+[0m16:11:36.525195 [error] [MainThread]:   No materialization 'tables' was found for adapter snowflake! (searched types 'default' and 'snowflake')
+[0m16:11:36.526195 [info ] [MainThread]: 
+[0m16:11:36.527195 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:11:36.529243 [debug] [MainThread]: Command `dbt run` failed at 16:11:36.529243 after 3.13 seconds
+[0m16:11:36.529243 [debug] [MainThread]: Flushing usage events
+[0m16:14:35.945093 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 16:14:35.960093 | 2c71ca94-75e5-4dc6-a78d-dda472fac7e8 ==============================
+[0m16:14:35.960093 [info ] [MainThread]: Running with dbt=1.5.2
+[0m16:14:35.961094 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dbt_core\\dbt-core\\ray_dbt_project\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:14:36.231093 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m16:14:36.244095 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m16:14:36.262093 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:14:37.110309 [debug] [MainThread]: 1603: static parser failed on analytics\top_loyal_customers.sql
+[0m16:14:37.125309 [debug] [MainThread]: 1602: parser fallback to jinja rendering on analytics\top_loyal_customers.sql
+[0m16:14:37.280310 [info ] [MainThread]: Found 1 model, 28 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 14 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:14:37.283311 [info ] [MainThread]: 
+[0m16:14:37.284310 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:14:37.285310 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV'
+[0m16:14:37.308311 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV"
+[0m16:14:37.309312 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV"} */
+show terse schemas in database DVDRENTAL_DEV
+    limit 10000
+[0m16:14:37.309312 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:14:38.229189 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:14:38.231188 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: Close
+[0m16:14:38.296188 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV_DEV'
+[0m16:14:38.303188 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV_DEV"
+[0m16:14:38.304188 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV_DEV"} */
+show terse objects in DVDRENTAL_DEV.DEV
+[0m16:14:38.304188 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:14:39.093699 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m16:14:39.095699 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: Close
+[0m16:14:39.160699 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:14:39.161699 [info ] [MainThread]: 
+[0m16:14:39.166702 [debug] [Thread-1 (]: Began running node model.dvdrental_project.top_loyal_customers
+[0m16:14:39.167700 [info ] [Thread-1 (]: 1 of 1 START sql table model DEV.top_loyal_customers ........................... [RUN]
+[0m16:14:39.169699 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dvdrental_project.top_loyal_customers'
+[0m16:14:39.169699 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.top_loyal_customers
+[0m16:14:39.172699 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.top_loyal_customers"
+[0m16:14:39.174700 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (compile): 16:14:39.170699 => 16:14:39.173699
+[0m16:14:39.175699 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.top_loyal_customers
+[0m16:14:39.210700 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.top_loyal_customers"
+[0m16:14:39.215699 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.top_loyal_customers"
+[0m16:14:39.215699 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.top_loyal_customers"} */
+create or replace transient table DVDRENTAL_DEV.DEV.top_loyal_customers
+         as
+        (with top_loyal_customers as (
+SELECT first_name ||' '|| last_name AS full_name, email, address, phone, city, country, sum(amount) AS total_purchase
+FROM ref  cs
+JOIN ref  ad
+ON cs.address_id = ad.address_id
+JOIN ref  ct
+ON ad.city_id = ct.city_id
+JOIN ref  cy
+ON ct.country_id = cy.country_id
+JOIN ref  pm
+ON cs.customer_id = pm.customer_id
+GROUP BY 1, 2, 3, 4, 5, 6
+),
+
+final as (
+select * from top_loyal_customers
+ORDER BY total_purchase DESC
+LIMIT 10
+)
+
+select * from final
+        );
+[0m16:14:39.216699 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:14:40.216700 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad8372-0000-7a72-0001-25d20003f04a
+[0m16:14:40.217704 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'REF' does not exist or not authorized.
+[0m16:14:40.218699 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (execute): 16:14:39.175699 => 16:14:40.217704
+[0m16:14:40.219700 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: Close
+[0m16:14:40.300701 [debug] [Thread-1 (]: Database Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'REF' does not exist or not authorized.
+  compiled Code at target\run\dvdrental_project\models\analytics\top_loyal_customers.sql
+[0m16:14:40.302701 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model DEV.top_loyal_customers .................. [[31mERROR[0m in 1.13s]
+[0m16:14:40.303700 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.top_loyal_customers
+[0m16:14:40.306701 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:14:40.307701 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV' was properly closed.
+[0m16:14:40.308704 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV_DEV' was properly closed.
+[0m16:14:40.309701 [debug] [MainThread]: Connection 'model.dvdrental_project.top_loyal_customers' was properly closed.
+[0m16:14:40.310700 [info ] [MainThread]: 
+[0m16:14:40.311701 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 3.03 seconds (3.03s).
+[0m16:14:40.312702 [debug] [MainThread]: Command end result
+[0m16:14:40.332702 [info ] [MainThread]: 
+[0m16:14:40.333702 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:14:40.334701 [info ] [MainThread]: 
+[0m16:14:40.335702 [error] [MainThread]: [33mDatabase Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)[0m
+[0m16:14:40.336700 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m16:14:40.338700 [error] [MainThread]:   Object 'REF' does not exist or not authorized.
+[0m16:14:40.339700 [error] [MainThread]:   compiled Code at target\run\dvdrental_project\models\analytics\top_loyal_customers.sql
+[0m16:14:40.341702 [info ] [MainThread]: 
+[0m16:14:40.342703 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:14:40.346703 [debug] [MainThread]: Command `dbt run` failed at 16:14:40.345703 after 4.41 seconds
+[0m16:14:40.348705 [debug] [MainThread]: Flushing usage events
+[0m16:15:30.347483 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 16:15:30.362484 | e6c2676e-baf5-4607-bd8d-bf0dc8da5e0a ==============================
+[0m16:15:30.362484 [info ] [MainThread]: Running with dbt=1.5.2
+[0m16:15:30.363490 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dbt_core\\dbt-core\\ray_dbt_project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:15:30.618574 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m16:15:30.630534 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m16:15:30.700534 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:15:30.700534 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:15:30.718533 [info ] [MainThread]: Found 1 model, 28 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 14 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:15:30.720569 [info ] [MainThread]: 
+[0m16:15:30.722537 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:15:30.723569 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV'
+[0m16:15:30.739534 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV"
+[0m16:15:30.740536 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV"} */
+show terse schemas in database DVDRENTAL_DEV
+    limit 10000
+[0m16:15:30.741533 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:15:31.692570 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:15:31.694572 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: Close
+[0m16:15:31.787570 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV_DEV'
+[0m16:15:31.794568 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV_DEV"
+[0m16:15:31.794568 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV_DEV"} */
+show terse objects in DVDRENTAL_DEV.DEV
+[0m16:15:31.795569 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:15:32.344615 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m16:15:32.346616 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: Close
+[0m16:15:32.413616 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:15:32.414580 [info ] [MainThread]: 
+[0m16:15:32.419579 [debug] [Thread-1 (]: Began running node model.dvdrental_project.top_loyal_customers
+[0m16:15:32.420577 [info ] [Thread-1 (]: 1 of 1 START sql table model DEV.top_loyal_customers ........................... [RUN]
+[0m16:15:32.422584 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dvdrental_project.top_loyal_customers'
+[0m16:15:32.423585 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.top_loyal_customers
+[0m16:15:32.428582 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.top_loyal_customers"
+[0m16:15:32.429582 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (compile): 16:15:32.424593 => 16:15:32.429582
+[0m16:15:32.430583 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.top_loyal_customers
+[0m16:15:32.464586 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.top_loyal_customers"
+[0m16:15:32.468583 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.top_loyal_customers"
+[0m16:15:32.469605 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.top_loyal_customers"} */
+create or replace transient table DVDRENTAL_DEV.DEV.top_loyal_customers
+         as
+        (with top_loyal_customers as (
+SELECT first_name ||' '|| last_name AS full_name, email, address, phone, city, country, sum(amount) AS total_purchase
+FROM ref  cs
+JOIN ref  ad
+ON cs.address_id = ad.address_id
+JOIN ref  ct
+ON ad.city_id = ct.city_id
+JOIN ref  cy
+ON ct.country_id = cy.country_id
+JOIN ref  pm
+ON cs.customer_id = pm.customer_id
+GROUP BY 1, 2, 3, 4, 5, 6
+),
+
+final as (
+select * from top_loyal_customers
+ORDER BY total_purchase DESC
+LIMIT 10
+)
+
+select * from final
+        );
+[0m16:15:32.469605 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:15:33.222895 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad8373-0000-7a2c-0001-25d20003d07e
+[0m16:15:33.222895 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'REF' does not exist or not authorized.
+[0m16:15:33.223895 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (execute): 16:15:32.430583 => 16:15:33.223895
+[0m16:15:33.224896 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: Close
+[0m16:15:33.295895 [debug] [Thread-1 (]: Database Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'REF' does not exist or not authorized.
+  compiled Code at target\run\dvdrental_project\models\analytics\top_loyal_customers.sql
+[0m16:15:33.296897 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model DEV.top_loyal_customers .................. [[31mERROR[0m in 0.87s]
+[0m16:15:33.298899 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.top_loyal_customers
+[0m16:15:33.300895 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:15:33.300895 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV' was properly closed.
+[0m16:15:33.301897 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV_DEV' was properly closed.
+[0m16:15:33.301897 [debug] [MainThread]: Connection 'model.dvdrental_project.top_loyal_customers' was properly closed.
+[0m16:15:33.302895 [info ] [MainThread]: 
+[0m16:15:33.303896 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.58 seconds (2.58s).
+[0m16:15:33.304896 [debug] [MainThread]: Command end result
+[0m16:15:33.315897 [info ] [MainThread]: 
+[0m16:15:33.317897 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:15:33.318897 [info ] [MainThread]: 
+[0m16:15:33.319897 [error] [MainThread]: [33mDatabase Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)[0m
+[0m16:15:33.320896 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m16:15:33.321906 [error] [MainThread]:   Object 'REF' does not exist or not authorized.
+[0m16:15:33.322901 [error] [MainThread]:   compiled Code at target\run\dvdrental_project\models\analytics\top_loyal_customers.sql
+[0m16:15:33.323899 [info ] [MainThread]: 
+[0m16:15:33.325897 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:15:33.328898 [debug] [MainThread]: Command `dbt run` failed at 16:15:33.328898 after 2.99 seconds
+[0m16:15:33.329898 [debug] [MainThread]: Flushing usage events
+[0m16:17:30.499447 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 16:17:30.514435 | 12fc9954-17e9-4227-8425-496d2c90d083 ==============================
+[0m16:17:30.514435 [info ] [MainThread]: Running with dbt=1.5.2
+[0m16:17:30.515401 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dbt_core\\dbt-core\\ray_dbt_project\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:17:30.775058 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m16:17:30.789017 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m16:17:30.852052 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:17:30.852052 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:17:30.870043 [info ] [MainThread]: Found 1 model, 28 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 14 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:17:30.872019 [info ] [MainThread]: 
+[0m16:17:30.873019 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:17:30.875019 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV'
+[0m16:17:30.891021 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV"
+[0m16:17:30.892021 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV"} */
+show terse schemas in database DVDRENTAL_DEV
+    limit 10000
+[0m16:17:30.893022 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:17:31.937722 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:17:31.939755 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: Close
+[0m16:17:32.091724 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV_DEV'
+[0m16:17:32.098717 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV_DEV"
+[0m16:17:32.099716 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV_DEV"} */
+show terse objects in DVDRENTAL_DEV.DEV
+[0m16:17:32.100717 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:17:32.820358 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m16:17:32.821358 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: Close
+[0m16:17:32.910359 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:17:32.911363 [info ] [MainThread]: 
+[0m16:17:32.915360 [debug] [Thread-1 (]: Began running node model.dvdrental_project.top_loyal_customers
+[0m16:17:32.916393 [info ] [Thread-1 (]: 1 of 1 START sql table model DEV.top_loyal_customers ........................... [RUN]
+[0m16:17:32.917362 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dvdrental_project.top_loyal_customers'
+[0m16:17:32.918394 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.top_loyal_customers
+[0m16:17:32.921360 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.top_loyal_customers"
+[0m16:17:32.922359 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (compile): 16:17:32.918394 => 16:17:32.922359
+[0m16:17:32.923362 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.top_loyal_customers
+[0m16:17:32.956384 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.top_loyal_customers"
+[0m16:17:32.958361 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.top_loyal_customers"
+[0m16:17:32.959359 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.top_loyal_customers"} */
+create or replace transient table DVDRENTAL_DEV.DEV.top_loyal_customers
+         as
+        (with top_loyal_customers as (
+SELECT first_name ||' '|| last_name AS full_name, email, address, phone, city, country, sum(amount) AS total_purchase
+FROM ref  cs
+JOIN ref  ad
+ON cs.address_id = ad.address_id
+JOIN ref  ct
+ON ad.city_id = ct.city_id
+JOIN ref  cy
+ON ct.country_id = cy.country_id
+JOIN ref  pm
+ON cs.customer_id = pm.customer_id
+GROUP BY 1, 2, 3, 4, 5, 6
+),
+
+final as (
+select * from top_loyal_customers
+ORDER BY total_purchase DESC
+LIMIT 10
+)
+
+select * from final
+        );
+[0m16:17:32.959359 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:17:33.696921 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad8375-0000-7a60-0001-25d200043066
+[0m16:17:33.697920 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'REF' does not exist or not authorized.
+[0m16:17:33.698919 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (execute): 16:17:32.923362 => 16:17:33.697920
+[0m16:17:33.699921 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: Close
+[0m16:17:33.771918 [debug] [Thread-1 (]: Database Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'REF' does not exist or not authorized.
+  compiled Code at target\run\dvdrental_project\models\analytics\top_loyal_customers.sql
+[0m16:17:33.772921 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model DEV.top_loyal_customers .................. [[31mERROR[0m in 0.86s]
+[0m16:17:33.773920 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.top_loyal_customers
+[0m16:17:33.775921 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:17:33.776947 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV' was properly closed.
+[0m16:17:33.777919 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV_DEV' was properly closed.
+[0m16:17:33.777919 [debug] [MainThread]: Connection 'model.dvdrental_project.top_loyal_customers' was properly closed.
+[0m16:17:33.777919 [info ] [MainThread]: 
+[0m16:17:33.778921 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.90 seconds (2.90s).
+[0m16:17:33.779944 [debug] [MainThread]: Command end result
+[0m16:17:33.792925 [info ] [MainThread]: 
+[0m16:17:33.792925 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:17:33.793921 [info ] [MainThread]: 
+[0m16:17:33.794920 [error] [MainThread]: [33mDatabase Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)[0m
+[0m16:17:33.795920 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m16:17:33.796924 [error] [MainThread]:   Object 'REF' does not exist or not authorized.
+[0m16:17:33.797919 [error] [MainThread]:   compiled Code at target\run\dvdrental_project\models\analytics\top_loyal_customers.sql
+[0m16:17:33.798922 [info ] [MainThread]: 
+[0m16:17:33.799921 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:17:33.800920 [debug] [MainThread]: Command `dbt run` failed at 16:17:33.800920 after 3.31 seconds
+[0m16:17:33.800920 [debug] [MainThread]: Flushing usage events
+[0m16:24:59.829785 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 16:24:59.844785 | 8db81697-08a9-4e32-9729-354c3643d8f0 ==============================
+[0m16:24:59.844785 [info ] [MainThread]: Running with dbt=1.5.2
+[0m16:24:59.846786 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dbt_core\\dbt-core\\ray_dbt_project\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:25:00.128432 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m16:25:00.146406 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m16:25:00.207431 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:25:00.208395 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:25:00.227396 [info ] [MainThread]: Found 1 model, 28 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 14 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:25:00.229395 [info ] [MainThread]: 
+[0m16:25:00.231395 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:25:00.232397 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV'
+[0m16:25:00.249395 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV"
+[0m16:25:00.250406 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV"} */
+show terse schemas in database DVDRENTAL_DEV
+    limit 10000
+[0m16:25:00.251398 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:25:01.422051 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:25:01.424071 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: Close
+[0m16:25:01.487612 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV_DEV'
+[0m16:25:01.494607 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV_DEV"
+[0m16:25:01.494607 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV_DEV"} */
+show terse objects in DVDRENTAL_DEV.DEV
+[0m16:25:01.495577 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:25:02.179653 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m16:25:02.181690 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: Close
+[0m16:25:02.246679 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:25:02.247653 [info ] [MainThread]: 
+[0m16:25:02.253655 [debug] [Thread-1 (]: Began running node model.dvdrental_project.top_loyal_customers
+[0m16:25:02.254657 [info ] [Thread-1 (]: 1 of 1 START sql table model DEV.top_loyal_customers ........................... [RUN]
+[0m16:25:02.256656 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dvdrental_project.top_loyal_customers'
+[0m16:25:02.257655 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.top_loyal_customers
+[0m16:25:02.262653 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.top_loyal_customers"
+[0m16:25:02.263657 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (compile): 16:25:02.258660 => 16:25:02.263657
+[0m16:25:02.264655 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.top_loyal_customers
+[0m16:25:02.299691 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.top_loyal_customers"
+[0m16:25:02.301654 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.top_loyal_customers"
+[0m16:25:02.301654 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.top_loyal_customers"} */
+create or replace transient table DVDRENTAL_DEV.DEV.top_loyal_customers
+         as
+        (with top_loyal_customers as (
+SELECT first_name ||' '|| last_name AS full_name, email, address, phone, city, country, sum(amount) AS total_purchase
+FROM ref  cs
+JOIN ref  ad
+ON cs.address_id = ad.address_id
+JOIN ref  ct
+ON ad.city_id = ct.city_id
+JOIN ref  cy
+ON ct.country_id = cy.country_id
+JOIN ref  pm
+ON cs.customer_id = pm.customer_id
+GROUP BY 1, 2, 3, 4, 5, 6
+),
+
+final as (
+select * from top_loyal_customers
+ORDER BY total_purchase DESC
+LIMIT 10
+)
+
+select * from final
+        );
+[0m16:25:02.302655 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:25:03.029944 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad837d-0000-7a5e-0001-25d200040072
+[0m16:25:03.029944 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'REF' does not exist or not authorized.
+[0m16:25:03.030944 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (execute): 16:25:02.264655 => 16:25:03.030944
+[0m16:25:03.031945 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: Close
+[0m16:25:03.095948 [debug] [Thread-1 (]: Database Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'REF' does not exist or not authorized.
+  compiled Code at target\run\dvdrental_project\models\analytics\top_loyal_customers.sql
+[0m16:25:03.096981 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model DEV.top_loyal_customers .................. [[31mERROR[0m in 0.84s]
+[0m16:25:03.097987 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.top_loyal_customers
+[0m16:25:03.099947 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:25:03.100945 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV' was properly closed.
+[0m16:25:03.100945 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV_DEV' was properly closed.
+[0m16:25:03.101947 [debug] [MainThread]: Connection 'model.dvdrental_project.top_loyal_customers' was properly closed.
+[0m16:25:03.101947 [info ] [MainThread]: 
+[0m16:25:03.102945 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.87 seconds (2.87s).
+[0m16:25:03.103946 [debug] [MainThread]: Command end result
+[0m16:25:03.115947 [info ] [MainThread]: 
+[0m16:25:03.116945 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:25:03.117947 [info ] [MainThread]: 
+[0m16:25:03.118945 [error] [MainThread]: [33mDatabase Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)[0m
+[0m16:25:03.119945 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m16:25:03.119945 [error] [MainThread]:   Object 'REF' does not exist or not authorized.
+[0m16:25:03.120947 [error] [MainThread]:   compiled Code at target\run\dvdrental_project\models\analytics\top_loyal_customers.sql
+[0m16:25:03.121945 [info ] [MainThread]: 
+[0m16:25:03.122945 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:25:03.124947 [debug] [MainThread]: Command `dbt run` failed at 16:25:03.124947 after 3.30 seconds
+[0m16:25:03.125945 [debug] [MainThread]: Flushing usage events
+[0m16:32:18.690289 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 16:32:18.706288 | 624d2038-8123-45a2-88de-5732ce36e98d ==============================
+[0m16:32:18.706288 [info ] [MainThread]: Running with dbt=1.5.2
+[0m16:32:18.707289 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dbt_core\\dbt-core\\ray_dbt_project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:32:18.960578 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m16:32:18.971537 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m16:32:19.043431 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m16:32:19.045434 [debug] [MainThread]: Partial parsing: updated file: dvdrental_project://models\analytics\schema.yml
+[0m16:32:19.045434 [debug] [MainThread]: Partial parsing: updated file: dvdrental_project://models\analytics\top_loyal_customers.sql
+[0m16:32:19.062420 [debug] [MainThread]: 1699: static parser successfully parsed analytics\top_loyal_customers.sql
+[0m16:32:19.202397 [info ] [MainThread]: Found 1 model, 28 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 14 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:32:19.204396 [info ] [MainThread]: 
+[0m16:32:19.206397 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:32:19.207394 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV'
+[0m16:32:19.260396 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV"
+[0m16:32:19.260396 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV"} */
+show terse schemas in database DVDRENTAL_DEV
+    limit 10000
+[0m16:32:19.261395 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:32:20.175092 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:32:20.177092 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: Close
+[0m16:32:20.246092 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV_DEV'
+[0m16:32:20.253127 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV_DEV"
+[0m16:32:20.254129 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV_DEV"} */
+show terse objects in DVDRENTAL_DEV.DEV
+[0m16:32:20.254129 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:32:20.974126 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m16:32:20.976126 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: Close
+[0m16:32:21.039117 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:32:21.040091 [info ] [MainThread]: 
+[0m16:32:21.045092 [debug] [Thread-1 (]: Began running node model.dvdrental_project.top_loyal_customers
+[0m16:32:21.046092 [info ] [Thread-1 (]: 1 of 1 START sql table model DEV.top_loyal_customers ........................... [RUN]
+[0m16:32:21.047091 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dvdrental_project.top_loyal_customers'
+[0m16:32:21.047091 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.top_loyal_customers
+[0m16:32:21.052091 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.top_loyal_customers"
+[0m16:32:21.053093 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (compile): 16:32:21.048118 => 16:32:21.053093
+[0m16:32:21.054090 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.top_loyal_customers
+[0m16:32:21.091091 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.top_loyal_customers"
+[0m16:32:21.093121 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.top_loyal_customers"
+[0m16:32:21.094090 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.top_loyal_customers"} */
+create or replace transient table DVDRENTAL_DEV.DEV.top_loyal_customers
+         as
+        (with top_loyal_customers as (
+SELECT first_name ||' '|| last_name AS full_name, email, address, phone, city, country, sum(amount) AS total_purchase
+FROM dvdrental.dvdrental.customer as cs
+JOIN dvdrental.dvdrental.address as  ad
+ON cs.address_id = ad.address_id
+JOIN dvdrental.dvdrental.city asct
+ON ad.city_id = ct.city_id
+JOIN dvdrental.dvdrental.country as cy
+ON ct.country_id = cy.country_id
+JOIN dvdrental.dvdrental.payment as pm
+ON cs.customer_id = pm.customer_id
+GROUP BY 1, 2, 3, 4, 5, 6
+),
+
+final as (
+select * from top_loyal_customers
+ORDER BY total_purchase DESC
+LIMIT 10
+)
+
+select * from final
+        );
+[0m16:32:21.095090 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:32:21.933266 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01ad8384-0000-7a7d-0001-25d200044032
+[0m16:32:21.934266 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 9 at position 16
+invalid identifier 'CT.CITY_ID'
+[0m16:32:21.935299 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (execute): 16:32:21.054090 => 16:32:21.935299
+[0m16:32:21.936269 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: Close
+[0m16:32:22.014273 [debug] [Thread-1 (]: Database Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)
+  000904 (42000): SQL compilation error: error line 9 at position 16
+  invalid identifier 'CT.CITY_ID'
+  compiled Code at target\run\dvdrental_project\models\analytics\top_loyal_customers.sql
+[0m16:32:22.016272 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model DEV.top_loyal_customers .................. [[31mERROR[0m in 0.97s]
+[0m16:32:22.018269 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.top_loyal_customers
+[0m16:32:22.022269 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:32:22.023269 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV' was properly closed.
+[0m16:32:22.024271 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV_DEV' was properly closed.
+[0m16:32:22.025268 [debug] [MainThread]: Connection 'model.dvdrental_project.top_loyal_customers' was properly closed.
+[0m16:32:22.026268 [info ] [MainThread]: 
+[0m16:32:22.028267 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.82 seconds (2.82s).
+[0m16:32:22.030268 [debug] [MainThread]: Command end result
+[0m16:32:22.051732 [info ] [MainThread]: 
+[0m16:32:22.053734 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:32:22.055740 [info ] [MainThread]: 
+[0m16:32:22.057731 [error] [MainThread]: [33mDatabase Error in model top_loyal_customers (models\analytics\top_loyal_customers.sql)[0m
+[0m16:32:22.059732 [error] [MainThread]:   000904 (42000): SQL compilation error: error line 9 at position 16
+[0m16:32:22.061732 [error] [MainThread]:   invalid identifier 'CT.CITY_ID'
+[0m16:32:22.062733 [error] [MainThread]:   compiled Code at target\run\dvdrental_project\models\analytics\top_loyal_customers.sql
+[0m16:32:22.065735 [info ] [MainThread]: 
+[0m16:32:22.066731 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:32:22.069768 [debug] [MainThread]: Command `dbt run` failed at 16:32:22.068731 after 3.38 seconds
+[0m16:32:22.070732 [debug] [MainThread]: Flushing usage events
+[0m16:33:15.142955 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 16:33:15.162938 | 38abe77c-c2d1-475b-92af-47162ecf31d0 ==============================
+[0m16:33:15.162938 [info ] [MainThread]: Running with dbt=1.5.2
+[0m16:33:15.163942 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dbt_core\\dbt-core\\ray_dbt_project\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:33:15.460999 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m16:33:15.474951 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m16:33:15.562976 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:33:15.564965 [debug] [MainThread]: Partial parsing: updated file: dvdrental_project://models\analytics\top_loyal_customers.sql
+[0m16:33:15.581975 [debug] [MainThread]: 1699: static parser successfully parsed analytics\top_loyal_customers.sql
+[0m16:33:15.622939 [info ] [MainThread]: Found 1 model, 28 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 14 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:33:15.625944 [info ] [MainThread]: 
+[0m16:33:15.627940 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:33:15.629943 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV'
+[0m16:33:15.646975 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV"
+[0m16:33:15.646975 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV"} */
+show terse schemas in database DVDRENTAL_DEV
+    limit 10000
+[0m16:33:15.647940 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:33:16.675179 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m16:33:16.677179 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: Close
+[0m16:33:16.777700 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV_DEV'
+[0m16:33:16.785673 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV_DEV"
+[0m16:33:16.786676 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV_DEV"} */
+show terse objects in DVDRENTAL_DEV.DEV
+[0m16:33:16.786676 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:33:17.508312 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m16:33:17.510338 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: Close
+[0m16:33:17.586356 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:33:17.587324 [info ] [MainThread]: 
+[0m16:33:17.594320 [debug] [Thread-1 (]: Began running node model.dvdrental_project.top_loyal_customers
+[0m16:33:17.596320 [info ] [Thread-1 (]: 1 of 1 START sql table model DEV.top_loyal_customers ........................... [RUN]
+[0m16:33:17.598320 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dvdrental_project.top_loyal_customers'
+[0m16:33:17.599319 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.top_loyal_customers
+[0m16:33:17.605794 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.top_loyal_customers"
+[0m16:33:17.608016 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (compile): 16:33:17.599319 => 16:33:17.607476
+[0m16:33:17.609073 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.top_loyal_customers
+[0m16:33:17.646445 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.top_loyal_customers"
+[0m16:33:17.649449 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.top_loyal_customers"
+[0m16:33:17.650453 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.top_loyal_customers"} */
+create or replace transient table DVDRENTAL_DEV.DEV.top_loyal_customers
+         as
+        (with top_loyal_customers as (
+SELECT first_name ||' '|| last_name AS full_name, email, address, phone, city, country, sum(amount) AS total_purchase
+FROM dvdrental.dvdrental.customer as cs
+JOIN dvdrental.dvdrental.address as  ad
+ON cs.address_id = ad.address_id
+JOIN dvdrental.dvdrental.city as ct
+ON ad.city_id = ct.city_id
+JOIN dvdrental.dvdrental.country as cy
+ON ct.country_id = cy.country_id
+JOIN dvdrental.dvdrental.payment as pm
+ON cs.customer_id = pm.customer_id
+GROUP BY 1, 2, 3, 4, 5, 6
+),
+
+final as (
+select * from top_loyal_customers
+ORDER BY total_purchase DESC
+LIMIT 10
+)
+
+select * from final
+        );
+[0m16:33:17.650453 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:33:20.886814 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 3.0 seconds
+[0m16:33:20.909854 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (execute): 16:33:17.610175 => 16:33:20.909854
+[0m16:33:20.910818 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: Close
+[0m16:33:21.032850 [info ] [Thread-1 (]: 1 of 1 OK created sql table model DEV.top_loyal_customers ...................... [[32mSUCCESS 1[0m in 3.44s]
+[0m16:33:21.034815 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.top_loyal_customers
+[0m16:33:21.037837 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:33:21.037837 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV' was properly closed.
+[0m16:33:21.038814 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV_DEV' was properly closed.
+[0m16:33:21.038814 [debug] [MainThread]: Connection 'model.dvdrental_project.top_loyal_customers' was properly closed.
+[0m16:33:21.039813 [info ] [MainThread]: 
+[0m16:33:21.040812 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 5.41 seconds (5.41s).
+[0m16:33:21.042814 [debug] [MainThread]: Command end result
+[0m16:33:21.055814 [info ] [MainThread]: 
+[0m16:33:21.057817 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:33:21.058824 [info ] [MainThread]: 
+[0m16:33:21.059852 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:33:21.060816 [debug] [MainThread]: Command `dbt run` succeeded at 16:33:21.060816 after 5.93 seconds
+[0m16:33:21.061843 [debug] [MainThread]: Flushing usage events
