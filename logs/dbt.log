@@ -1876,3 +1876,1777 @@ select * from final
 [0m17:36:15.153005 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
 [0m17:36:15.154997 [debug] [MainThread]: Command `dbt run` succeeded at 17:36:15.153998 after 9.40 seconds
 [0m17:36:15.154997 [debug] [MainThread]: Flushing usage events
+[0m21:33:40.884962 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 21:33:40.904398 | fc473411-4ed6-446d-bcc9-47314cd7ae50 ==============================
+[0m21:33:40.904398 [info ] [MainThread]: Running with dbt=1.5.2
+[0m21:33:40.906399 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dvdrental_project\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:33:42.329834 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m21:33:42.347835 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m21:33:42.822279 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m21:33:42.823282 [debug] [MainThread]: Partial parsing: added file: dvdrental_project://models\analytics\high_in_demand.sql
+[0m21:33:42.838531 [debug] [MainThread]: 1699: static parser successfully parsed analytics\high_in_demand.sql
+[0m21:33:42.873617 [info ] [MainThread]: Found 4 models, 30 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 15 sources, 0 exposures, 0 metrics, 0 groups
+[0m21:33:42.876618 [info ] [MainThread]: 
+[0m21:33:42.877617 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:33:42.879624 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV'
+[0m21:33:42.895652 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV"
+[0m21:33:42.895652 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV"} */
+show terse schemas in database DVDRENTAL_DEV
+    limit 10000
+[0m21:33:42.896653 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:33:45.194861 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 2.0 seconds
+[0m21:33:45.196896 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: Close
+[0m21:33:45.299575 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV_DEV'
+[0m21:33:45.305630 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV_DEV"
+[0m21:33:45.305630 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV_DEV"} */
+show terse objects in DVDRENTAL_DEV.DEV
+[0m21:33:45.306594 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:33:45.904013 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m21:33:45.905014 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: Close
+[0m21:33:46.006981 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:33:46.007978 [info ] [MainThread]: 
+[0m21:33:46.018978 [debug] [Thread-1 (]: Began running node model.dvdrental_project.high_in_demand
+[0m21:33:46.018978 [info ] [Thread-1 (]: 1 of 4 START sql table model DEV.high_in_demand ................................ [RUN]
+[0m21:33:46.020978 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dvdrental_project.high_in_demand'
+[0m21:33:46.020978 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.high_in_demand
+[0m21:33:46.024977 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.high_in_demand"
+[0m21:33:46.026987 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.high_in_demand (compile): 21:33:46.021988 => 21:33:46.025978
+[0m21:33:46.027995 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.high_in_demand
+[0m21:33:46.071003 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.high_in_demand"
+[0m21:33:46.073984 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.high_in_demand"
+[0m21:33:46.074983 [debug] [Thread-1 (]: On model.dvdrental_project.high_in_demand: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.high_in_demand"} */
+create or replace transient table DVDRENTAL_DEV.DEV.high_in_demand
+         as
+        (SELECT 
+        country, 
+        COUNT(DISTINCT customer_id) AS customer_base,
+        SUM(amount) AS total_sales
+FROM dvdrental.dvdrental.country
+JOIN dvdrental.dvdrental.city
+USING(country_id)
+JOIN dvdrental.dvdrental.address
+USING(city_id)
+JOIN dvdrental.dvdrental.customer
+USING(address_id)
+JOIN dvdrental.dvdrental.payment
+USING(customer_id)
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 10
+        );
+[0m21:33:46.074983 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:33:47.633911 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m21:33:47.654947 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.high_in_demand (execute): 21:33:46.027995 => 21:33:47.653946
+[0m21:33:47.654947 [debug] [Thread-1 (]: On model.dvdrental_project.high_in_demand: Close
+[0m21:33:47.725419 [info ] [Thread-1 (]: 1 of 4 OK created sql table model DEV.high_in_demand ........................... [[32mSUCCESS 1[0m in 1.70s]
+[0m21:33:47.726439 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.high_in_demand
+[0m21:33:47.727420 [debug] [Thread-1 (]: Began running node model.dvdrental_project.rent_demand
+[0m21:33:47.727420 [info ] [Thread-1 (]: 2 of 4 START sql table model DEV.rent_demand ................................... [RUN]
+[0m21:33:47.729511 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dvdrental_project.high_in_demand, now model.dvdrental_project.rent_demand)
+[0m21:33:47.729634 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.rent_demand
+[0m21:33:47.733671 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.rent_demand"
+[0m21:33:47.734636 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rent_demand (compile): 21:33:47.729634 => 21:33:47.734636
+[0m21:33:47.735647 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.rent_demand
+[0m21:33:47.738635 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.rent_demand"
+[0m21:33:47.740914 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.rent_demand"
+[0m21:33:47.740914 [debug] [Thread-1 (]: On model.dvdrental_project.rent_demand: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.rent_demand"} */
+create or replace transient table DVDRENTAL_DEV.DEV.rent_demand
+         as
+        (with rent_demand as (
+select 
+    c.name as genre,
+    count(cs.customer_id) as total_rent_demand
+from dvdrental.dvdrental.category as c
+join dvdrental.dvdrental.film_category as fc
+using(category_id)
+join dvdrental.dvdrental.film as f 
+using(film_id)
+join dvdrental.dvdrental.inventory as i
+using(film_id)
+join dvdrental.dvdrental.rental as r
+using(inventory_id)
+join dvdrental.dvdrental.customer cs
+using(customer_id)
+group by 1
+order BY 2 DESC)
+
+select * from rent_demand
+        );
+[0m21:33:47.741896 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:33:49.137491 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:33:49.143710 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rent_demand (execute): 21:33:47.735647 => 21:33:49.142712
+[0m21:33:49.143710 [debug] [Thread-1 (]: On model.dvdrental_project.rent_demand: Close
+[0m21:33:49.256522 [info ] [Thread-1 (]: 2 of 4 OK created sql table model DEV.rent_demand .............................. [[32mSUCCESS 1[0m in 1.53s]
+[0m21:33:49.257534 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.rent_demand
+[0m21:33:49.258491 [debug] [Thread-1 (]: Began running node model.dvdrental_project.rental_performance
+[0m21:33:49.259487 [info ] [Thread-1 (]: 3 of 4 START sql table model DEV.rental_performance ............................ [RUN]
+[0m21:33:49.260487 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dvdrental_project.rent_demand, now model.dvdrental_project.rental_performance)
+[0m21:33:49.261486 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.rental_performance
+[0m21:33:49.265486 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.rental_performance"
+[0m21:33:49.266486 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rental_performance (compile): 21:33:49.261486 => 21:33:49.266486
+[0m21:33:49.267488 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.rental_performance
+[0m21:33:49.270488 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.rental_performance"
+[0m21:33:49.272488 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.rental_performance"
+[0m21:33:49.273522 [debug] [Thread-1 (]: On model.dvdrental_project.rental_performance: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.rental_performance"} */
+create or replace transient table DVDRENTAL_DEV.DEV.rental_performance
+         as
+        (with daily_retal_date_check as(
+select 
+    *, 
+    DATEDIFF(day, return_date::date, rental_date::date) as date_difference
+from dvdrental.dvdrental.rental),
+
+rental_performance as (
+    select f.film_id,
+      case 
+          when rental_duration > date_difference then 'Returned early'
+          when rental_duration = date_difference then 'Returned on time'
+          else 'Returned late'
+      end as return_status
+      from dvdrental.dvdrental.film as f
+      join dvdrental.dvdrental.inventory as i
+      using(film_id)
+      join daily_retal_date_check
+      using(inventory_id)), 
+      
+final as (
+select return_status, count(film_id) total_films
+from rental_performance
+group by 1)
+
+select * from final
+        );
+[0m21:33:49.273522 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:33:50.607574 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:33:50.610805 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rental_performance (execute): 21:33:49.267488 => 21:33:50.610805
+[0m21:33:50.611837 [debug] [Thread-1 (]: On model.dvdrental_project.rental_performance: Close
+[0m21:33:50.702138 [info ] [Thread-1 (]: 3 of 4 OK created sql table model DEV.rental_performance ....................... [[32mSUCCESS 1[0m in 1.44s]
+[0m21:33:50.704139 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.rental_performance
+[0m21:33:50.705139 [debug] [Thread-1 (]: Began running node model.dvdrental_project.top_loyal_customers
+[0m21:33:50.706139 [info ] [Thread-1 (]: 4 of 4 START sql table model DEV.top_loyal_customers ........................... [RUN]
+[0m21:33:50.707152 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dvdrental_project.rental_performance, now model.dvdrental_project.top_loyal_customers)
+[0m21:33:50.707152 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.top_loyal_customers
+[0m21:33:50.711141 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.top_loyal_customers"
+[0m21:33:50.712141 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (compile): 21:33:50.708141 => 21:33:50.712141
+[0m21:33:50.713141 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.top_loyal_customers
+[0m21:33:50.717141 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.top_loyal_customers"
+[0m21:33:50.721143 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.top_loyal_customers"
+[0m21:33:50.721143 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.top_loyal_customers"} */
+create or replace transient table DVDRENTAL_DEV.DEV.top_loyal_customers
+         as
+        (with top_loyal_customers as (
+SELECT first_name ||' '|| last_name AS full_name, email, address, phone, city, country, sum(amount) AS total_purchase
+FROM dvdrental.dvdrental.customer as cs
+JOIN dvdrental.dvdrental.address as  ad
+ON cs.address_id = ad.address_id
+JOIN dvdrental.dvdrental.city as ct
+ON ad.city_id = ct.city_id
+JOIN dvdrental.dvdrental.country as cy
+ON ct.country_id = cy.country_id
+JOIN dvdrental.dvdrental.payment as pm
+ON cs.customer_id = pm.customer_id
+GROUP BY 1, 2, 3, 4, 5, 6
+),
+
+final as (
+select * from top_loyal_customers
+ORDER BY total_purchase DESC
+LIMIT 10
+)
+
+select * from final
+        );
+[0m21:33:50.722144 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:33:53.066091 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m21:33:53.069088 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (execute): 21:33:50.713141 => 21:33:53.068087
+[0m21:33:53.069088 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: Close
+[0m21:33:53.135713 [info ] [Thread-1 (]: 4 of 4 OK created sql table model DEV.top_loyal_customers ...................... [[32mSUCCESS 1[0m in 2.43s]
+[0m21:33:53.136671 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.top_loyal_customers
+[0m21:33:53.138672 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:33:53.139672 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV' was properly closed.
+[0m21:33:53.139672 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV_DEV' was properly closed.
+[0m21:33:53.140685 [debug] [MainThread]: Connection 'model.dvdrental_project.top_loyal_customers' was properly closed.
+[0m21:33:53.140685 [info ] [MainThread]: 
+[0m21:33:53.141670 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 10.26 seconds (10.26s).
+[0m21:33:53.143674 [debug] [MainThread]: Command end result
+[0m21:33:53.155671 [info ] [MainThread]: 
+[0m21:33:53.156670 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:33:53.158674 [info ] [MainThread]: 
+[0m21:33:53.159672 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m21:33:53.161671 [debug] [MainThread]: Command `dbt run` succeeded at 21:33:53.161671 after 12.29 seconds
+[0m21:33:53.161671 [debug] [MainThread]: Flushing usage events
+[0m21:37:49.665516 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 21:37:49.677684 | cd6861a3-2a48-4177-b553-707370048646 ==============================
+[0m21:37:49.677684 [info ] [MainThread]: Running with dbt=1.5.2
+[0m21:37:49.679807 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dvdrental_project\\logs', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:37:49.927919 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m21:37:49.939176 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m21:37:50.008176 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:37:50.008176 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:37:50.024142 [info ] [MainThread]: Found 4 models, 30 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 15 sources, 0 exposures, 0 metrics, 0 groups
+[0m21:37:50.026142 [info ] [MainThread]: 
+[0m21:37:50.027142 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m21:37:50.028177 [debug] [MainThread]: Command end result
+[0m21:37:50.036302 [debug] [MainThread]: Command `dbt test` succeeded at 21:37:50.036302 after 0.38 seconds
+[0m21:37:50.036302 [debug] [MainThread]: Flushing usage events
+[0m21:41:12.176459 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 21:41:12.189931 | 1ce25c5b-cc97-4dfa-862a-479499658e3c ==============================
+[0m21:41:12.189931 [info ] [MainThread]: Running with dbt=1.5.2
+[0m21:41:12.190948 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dvdrental_project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:41:12.437941 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m21:41:12.447161 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m21:41:12.510432 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:41:12.511442 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:41:12.526660 [info ] [MainThread]: Found 4 models, 30 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 15 sources, 0 exposures, 0 metrics, 0 groups
+[0m21:41:12.528660 [info ] [MainThread]: 
+[0m21:41:12.529844 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m21:41:12.530881 [debug] [MainThread]: Command end result
+[0m21:41:12.538848 [debug] [MainThread]: Command `dbt test` succeeded at 21:41:12.537846 after 0.37 seconds
+[0m21:41:12.538848 [debug] [MainThread]: Flushing usage events
+[0m21:41:21.691634 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 21:41:21.704941 | 23ae8a45-d4de-465a-a23b-b327ae9259b5 ==============================
+[0m21:41:21.704941 [info ] [MainThread]: Running with dbt=1.5.2
+[0m21:41:21.705953 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dvdrental_project\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:41:21.952825 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m21:41:21.966850 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m21:41:22.045073 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:41:22.045073 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:41:22.062475 [info ] [MainThread]: Found 4 models, 30 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 15 sources, 0 exposures, 0 metrics, 0 groups
+[0m21:41:22.067477 [info ] [MainThread]: 
+[0m21:41:22.068479 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:41:22.070476 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV_DEV'
+[0m21:41:22.086508 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV_DEV"
+[0m21:41:22.087473 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV_DEV"} */
+show terse objects in DVDRENTAL_DEV.DEV
+[0m21:41:22.087473 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:41:22.931194 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m21:41:22.933156 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: Close
+[0m21:41:23.048215 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:41:23.049465 [info ] [MainThread]: 
+[0m21:41:23.056472 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205
+[0m21:41:23.057472 [info ] [Thread-1 (]: 1 of 30 START test source_not_null_dvdrental_data_actor_actor_id ............... [RUN]
+[0m21:41:23.058471 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205'
+[0m21:41:23.059467 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205
+[0m21:41:23.074465 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205"
+[0m21:41:23.077466 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205 (compile): 21:41:23.060467 => 21:41:23.076469
+[0m21:41:23.077466 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205
+[0m21:41:23.109500 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205"
+[0m21:41:23.111468 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205"
+[0m21:41:23.111468 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select actor_id
+from dvdrental.dvdrental.actor
+where actor_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:23.112467 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:41:23.752648 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:23.773182 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205 (execute): 21:41:23.078503 => 21:41:23.773182
+[0m21:41:23.774184 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205: Close
+[0m21:41:23.883139 [info ] [Thread-1 (]: 1 of 30 PASS source_not_null_dvdrental_data_actor_actor_id ..................... [[32mPASS[0m in 0.82s]
+[0m21:41:23.885140 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205
+[0m21:41:23.886141 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d
+[0m21:41:23.887143 [info ] [Thread-1 (]: 2 of 30 START test source_not_null_dvdrental_data_actor_info_actor_id .......... [RUN]
+[0m21:41:23.888141 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_actor_actor_id.c0863bb205, now test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d)
+[0m21:41:23.889139 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d
+[0m21:41:23.896137 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d"
+[0m21:41:23.897140 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d (compile): 21:41:23.889139 => 21:41:23.897140
+[0m21:41:23.898137 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d
+[0m21:41:23.902176 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d"
+[0m21:41:23.903137 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d"
+[0m21:41:23.904174 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select actor_id
+from dvdrental.dvdrental.actor_info
+where actor_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:23.904174 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:25.203533 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:25.205525 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d (execute): 21:41:23.899141 => 21:41:25.205525
+[0m21:41:25.206490 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d: Close
+[0m21:41:25.297426 [info ] [Thread-1 (]: 2 of 30 PASS source_not_null_dvdrental_data_actor_info_actor_id ................ [[32mPASS[0m in 1.41s]
+[0m21:41:25.299369 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d
+[0m21:41:25.299369 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5
+[0m21:41:25.300394 [info ] [Thread-1 (]: 3 of 30 START test source_not_null_dvdrental_data_address_address_id ........... [RUN]
+[0m21:41:25.301371 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_actor_info_actor_id.745feb258d, now test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5)
+[0m21:41:25.301371 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5
+[0m21:41:25.306404 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5"
+[0m21:41:25.309370 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5 (compile): 21:41:25.302368 => 21:41:25.308369
+[0m21:41:25.310369 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5
+[0m21:41:25.314370 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5"
+[0m21:41:25.317663 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5"
+[0m21:41:25.318653 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select address_id
+from dvdrental.dvdrental.address
+where address_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:25.318653 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:25.956370 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:25.958380 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5 (execute): 21:41:25.311370 => 21:41:25.957377
+[0m21:41:25.958380 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5: Close
+[0m21:41:26.075433 [info ] [Thread-1 (]: 3 of 30 PASS source_not_null_dvdrental_data_address_address_id ................. [[32mPASS[0m in 0.78s]
+[0m21:41:26.076415 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5
+[0m21:41:26.077417 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441
+[0m21:41:26.078398 [info ] [Thread-1 (]: 4 of 30 START test source_not_null_dvdrental_data_category_category_id ......... [RUN]
+[0m21:41:26.079399 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_address_address_id.f51d4c23d5, now test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441)
+[0m21:41:26.080399 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441
+[0m21:41:26.087435 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441"
+[0m21:41:26.089404 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441 (compile): 21:41:26.080399 => 21:41:26.088398
+[0m21:41:26.090398 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441
+[0m21:41:26.094399 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441"
+[0m21:41:26.097399 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441"
+[0m21:41:26.097399 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select category_id
+from dvdrental.dvdrental.category
+where category_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:26.098398 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:26.746145 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:26.748145 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441 (execute): 21:41:26.091415 => 21:41:26.748145
+[0m21:41:26.749326 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441: Close
+[0m21:41:26.822063 [info ] [Thread-1 (]: 4 of 30 PASS source_not_null_dvdrental_data_category_category_id ............... [[32mPASS[0m in 0.74s]
+[0m21:41:26.823026 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441
+[0m21:41:26.825046 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466
+[0m21:41:26.826034 [info ] [Thread-1 (]: 5 of 30 START test source_not_null_dvdrental_data_city_city_id ................. [RUN]
+[0m21:41:26.828035 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_category_category_id.6800cb8441, now test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466)
+[0m21:41:26.830029 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466
+[0m21:41:26.837029 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466"
+[0m21:41:26.839036 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466 (compile): 21:41:26.830029 => 21:41:26.839036
+[0m21:41:26.840028 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466
+[0m21:41:26.844027 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466"
+[0m21:41:26.845050 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466"
+[0m21:41:26.846031 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select city_id
+from dvdrental.dvdrental.city
+where city_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:26.846031 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:27.394805 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:27.396855 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466 (execute): 21:41:26.841027 => 21:41:27.396855
+[0m21:41:27.396855 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466: Close
+[0m21:41:27.460189 [info ] [Thread-1 (]: 5 of 30 PASS source_not_null_dvdrental_data_city_city_id ....................... [[32mPASS[0m in 0.63s]
+[0m21:41:27.461187 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466
+[0m21:41:27.462193 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6
+[0m21:41:27.463218 [info ] [Thread-1 (]: 6 of 30 START test source_not_null_dvdrental_data_country_country_id ........... [RUN]
+[0m21:41:27.464244 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_city_city_id.36517c3466, now test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6)
+[0m21:41:27.465226 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6
+[0m21:41:27.471215 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6"
+[0m21:41:27.473202 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6 (compile): 21:41:27.465226 => 21:41:27.473202
+[0m21:41:27.475194 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6
+[0m21:41:27.479216 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6"
+[0m21:41:27.482207 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6"
+[0m21:41:27.483222 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select country_id
+from dvdrental.dvdrental.country
+where country_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:27.484196 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:28.106531 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:28.108528 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6 (execute): 21:41:27.475194 => 21:41:28.108528
+[0m21:41:28.109780 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6: Close
+[0m21:41:28.175482 [info ] [Thread-1 (]: 6 of 30 PASS source_not_null_dvdrental_data_country_country_id ................. [[32mPASS[0m in 0.71s]
+[0m21:41:28.176481 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6
+[0m21:41:28.177448 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61
+[0m21:41:28.178445 [info ] [Thread-1 (]: 7 of 30 START test source_not_null_dvdrental_data_customer_customer_id ......... [RUN]
+[0m21:41:28.179453 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_country_country_id.beb3c8b7b6, now test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61)
+[0m21:41:28.179453 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61
+[0m21:41:28.186448 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61"
+[0m21:41:28.188449 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61 (compile): 21:41:28.180482 => 21:41:28.188449
+[0m21:41:28.189449 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61
+[0m21:41:28.194474 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61"
+[0m21:41:28.196448 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61"
+[0m21:41:28.197446 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from dvdrental.dvdrental.customer
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:28.197446 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:28.732039 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:28.735000 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61 (execute): 21:41:28.189449 => 21:41:28.734034
+[0m21:41:28.735000 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61: Close
+[0m21:41:28.825919 [info ] [Thread-1 (]: 7 of 30 PASS source_not_null_dvdrental_data_customer_customer_id ............... [[32mPASS[0m in 0.65s]
+[0m21:41:28.827895 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61
+[0m21:41:28.828881 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7
+[0m21:41:28.829879 [info ] [Thread-1 (]: 8 of 30 START test source_not_null_dvdrental_data_film_actor_actor_id .......... [RUN]
+[0m21:41:28.831681 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_customer_customer_id.ed9707ae61, now test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7)
+[0m21:41:28.832851 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7
+[0m21:41:28.839231 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7"
+[0m21:41:28.841463 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7 (compile): 21:41:28.833477 => 21:41:28.840942
+[0m21:41:28.842092 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7
+[0m21:41:28.846181 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7"
+[0m21:41:28.847165 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7"
+[0m21:41:28.848178 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select actor_id
+from dvdrental.dvdrental.film_actor
+where actor_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:28.849166 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:29.435298 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:29.437331 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7 (execute): 21:41:28.842617 => 21:41:29.437331
+[0m21:41:29.438323 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7: Close
+[0m21:41:29.523827 [info ] [Thread-1 (]: 8 of 30 PASS source_not_null_dvdrental_data_film_actor_actor_id ................ [[32mPASS[0m in 0.69s]
+[0m21:41:29.525789 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7
+[0m21:41:29.526789 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec
+[0m21:41:29.526789 [info ] [Thread-1 (]: 9 of 30 START test source_not_null_dvdrental_data_film_category_category_id .... [RUN]
+[0m21:41:29.528801 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_film_actor_actor_id.26cf56c3f7, now test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec)
+[0m21:41:29.528801 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec
+[0m21:41:29.535788 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec"
+[0m21:41:29.537809 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec (compile): 21:41:29.529825 => 21:41:29.536789
+[0m21:41:29.538795 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec
+[0m21:41:29.543790 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec"
+[0m21:41:29.545803 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec"
+[0m21:41:29.546824 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select category_id
+from dvdrental.dvdrental.film_category
+where category_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:29.546824 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:30.139096 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:30.141172 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec (execute): 21:41:29.540793 => 21:41:30.141172
+[0m21:41:30.142165 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec: Close
+[0m21:41:30.216727 [info ] [Thread-1 (]: 9 of 30 PASS source_not_null_dvdrental_data_film_category_category_id .......... [[32mPASS[0m in 0.69s]
+[0m21:41:30.217735 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec
+[0m21:41:30.218726 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c
+[0m21:41:30.218726 [info ] [Thread-1 (]: 10 of 30 START test source_not_null_dvdrental_data_film_film_id ................ [RUN]
+[0m21:41:30.220906 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_film_category_category_id.5a8792feec, now test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c)
+[0m21:41:30.220906 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c
+[0m21:41:30.225906 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c"
+[0m21:41:30.227907 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c (compile): 21:41:30.220906 => 21:41:30.226906
+[0m21:41:30.227907 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c
+[0m21:41:30.233906 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c"
+[0m21:41:30.235906 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c"
+[0m21:41:30.236909 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select film_id
+from dvdrental.dvdrental.film
+where film_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:30.237919 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:30.855968 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:30.857976 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c (execute): 21:41:30.229907 => 21:41:30.857976
+[0m21:41:30.859230 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c: Close
+[0m21:41:30.944364 [info ] [Thread-1 (]: 10 of 30 PASS source_not_null_dvdrental_data_film_film_id ...................... [[32mPASS[0m in 0.72s]
+[0m21:41:30.946329 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c
+[0m21:41:30.946329 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79
+[0m21:41:30.947351 [info ] [Thread-1 (]: 11 of 30 START test source_not_null_dvdrental_data_inventory_inventory_id ...... [RUN]
+[0m21:41:30.948328 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_film_film_id.61a249456c, now test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79)
+[0m21:41:30.949329 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79
+[0m21:41:30.955377 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79"
+[0m21:41:30.958339 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79 (compile): 21:41:30.949329 => 21:41:30.957338
+[0m21:41:30.959365 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79
+[0m21:41:30.963331 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79"
+[0m21:41:30.965329 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79"
+[0m21:41:30.966367 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select inventory_id
+from dvdrental.dvdrental.inventory
+where inventory_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:30.967365 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:31.508461 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:31.510650 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79 (execute): 21:41:30.960369 => 21:41:31.510650
+[0m21:41:31.511650 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79: Close
+[0m21:41:31.677889 [info ] [Thread-1 (]: 11 of 30 PASS source_not_null_dvdrental_data_inventory_inventory_id ............ [[32mPASS[0m in 0.73s]
+[0m21:41:31.679890 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79
+[0m21:41:31.679890 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4
+[0m21:41:31.680889 [info ] [Thread-1 (]: 12 of 30 START test source_not_null_dvdrental_data_payment_payment_id .......... [RUN]
+[0m21:41:31.681888 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_inventory_inventory_id.9c63fade79, now test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4)
+[0m21:41:31.682891 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4
+[0m21:41:31.689930 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4"
+[0m21:41:31.691888 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4 (compile): 21:41:31.683889 => 21:41:31.690911
+[0m21:41:31.691888 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4
+[0m21:41:31.695892 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4"
+[0m21:41:31.697888 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4"
+[0m21:41:31.698887 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select payment_id
+from dvdrental.dvdrental.payment
+where payment_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:31.699888 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:32.292977 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:32.295972 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4 (execute): 21:41:31.692891 => 21:41:32.294973
+[0m21:41:32.295972 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4: Close
+[0m21:41:32.397160 [info ] [Thread-1 (]: 12 of 30 PASS source_not_null_dvdrental_data_payment_payment_id ................ [[32mPASS[0m in 0.72s]
+[0m21:41:32.399302 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4
+[0m21:41:32.399302 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4
+[0m21:41:32.400339 [info ] [Thread-1 (]: 13 of 30 START test source_not_null_dvdrental_data_rental_rental_id ............ [RUN]
+[0m21:41:32.402359 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_payment_payment_id.fd65ea0ef4, now test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4)
+[0m21:41:32.403325 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4
+[0m21:41:32.409343 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4"
+[0m21:41:32.411307 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4 (compile): 21:41:32.403325 => 21:41:32.410309
+[0m21:41:32.412314 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4
+[0m21:41:32.419313 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4"
+[0m21:41:32.421305 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4"
+[0m21:41:32.422305 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select rental_id
+from dvdrental.dvdrental.rental
+where rental_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:32.423304 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:33.001127 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:33.004090 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4 (execute): 21:41:32.413303 => 21:41:33.004090
+[0m21:41:33.005090 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4: Close
+[0m21:41:33.123383 [info ] [Thread-1 (]: 13 of 30 PASS source_not_null_dvdrental_data_rental_rental_id .................. [[32mPASS[0m in 0.72s]
+[0m21:41:33.125346 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4
+[0m21:41:33.125346 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083
+[0m21:41:33.126361 [info ] [Thread-1 (]: 14 of 30 START test source_not_null_dvdrental_data_staff_staff_id .............. [RUN]
+[0m21:41:33.127347 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_rental_rental_id.3c472f75f4, now test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083)
+[0m21:41:33.128348 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083
+[0m21:41:33.133347 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083"
+[0m21:41:33.134880 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083 (compile): 21:41:33.128348 => 21:41:33.134880
+[0m21:41:33.135893 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083
+[0m21:41:33.140890 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083"
+[0m21:41:33.142890 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083"
+[0m21:41:33.143890 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select staff_id
+from dvdrental.dvdrental.staff
+where staff_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:33.144889 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:33.808948 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:33.811169 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083 (execute): 21:41:33.136899 => 21:41:33.811169
+[0m21:41:33.812134 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083: Close
+[0m21:41:33.911475 [info ] [Thread-1 (]: 14 of 30 PASS source_not_null_dvdrental_data_staff_staff_id .................... [[32mPASS[0m in 0.78s]
+[0m21:41:33.913474 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083
+[0m21:41:33.914474 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d
+[0m21:41:33.914474 [info ] [Thread-1 (]: 15 of 30 START test source_not_null_dvdrental_data_store_store_id .............. [RUN]
+[0m21:41:33.916480 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_staff_staff_id.be8807c083, now test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d)
+[0m21:41:33.916480 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d
+[0m21:41:33.921659 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d"
+[0m21:41:33.922660 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d (compile): 21:41:33.917474 => 21:41:33.922660
+[0m21:41:33.923659 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d
+[0m21:41:33.925690 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d"
+[0m21:41:33.928661 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d"
+[0m21:41:33.929823 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select store_id
+from dvdrental.dvdrental.store
+where store_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:33.930858 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:34.516099 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:34.518093 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d (execute): 21:41:33.923659 => 21:41:34.518093
+[0m21:41:34.519218 [debug] [Thread-1 (]: On test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d: Close
+[0m21:41:34.662874 [info ] [Thread-1 (]: 15 of 30 PASS source_not_null_dvdrental_data_store_store_id .................... [[32mPASS[0m in 0.75s]
+[0m21:41:34.664840 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d
+[0m21:41:34.664840 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143
+[0m21:41:34.665839 [info ] [Thread-1 (]: 16 of 30 START test source_unique_dvdrental_data_actor_actor_id ................ [RUN]
+[0m21:41:34.667838 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_not_null_dvdrental_data_store_store_id.7ae3d9334d, now test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143)
+[0m21:41:34.667838 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143
+[0m21:41:34.676840 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143"
+[0m21:41:34.678840 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143 (compile): 21:41:34.668838 => 21:41:34.677839
+[0m21:41:34.679859 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143
+[0m21:41:34.685839 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143"
+[0m21:41:34.688852 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143"
+[0m21:41:34.689840 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    actor_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.actor
+where actor_id is not null
+group by actor_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:34.690838 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:35.408398 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:35.410617 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143 (execute): 21:41:34.680839 => 21:41:35.410617
+[0m21:41:35.411582 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143: Close
+[0m21:41:35.472823 [info ] [Thread-1 (]: 16 of 30 PASS source_unique_dvdrental_data_actor_actor_id ...................... [[32mPASS[0m in 0.81s]
+[0m21:41:35.474790 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143
+[0m21:41:35.475817 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2
+[0m21:41:35.475817 [info ] [Thread-1 (]: 17 of 30 START test source_unique_dvdrental_data_actor_info_actor_id ........... [RUN]
+[0m21:41:35.477805 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_actor_actor_id.b5c608e143, now test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2)
+[0m21:41:35.477805 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2
+[0m21:41:35.482827 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2"
+[0m21:41:35.483805 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2 (compile): 21:41:35.478827 => 21:41:35.483805
+[0m21:41:35.484797 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2
+[0m21:41:35.486826 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2"
+[0m21:41:35.488806 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2"
+[0m21:41:35.489795 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    actor_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.actor_info
+where actor_id is not null
+group by actor_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:35.490813 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:36.278086 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:36.281195 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2 (execute): 21:41:35.484797 => 21:41:36.281195
+[0m21:41:36.281195 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2: Close
+[0m21:41:36.363122 [info ] [Thread-1 (]: 17 of 30 PASS source_unique_dvdrental_data_actor_info_actor_id ................. [[32mPASS[0m in 0.89s]
+[0m21:41:36.364086 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2
+[0m21:41:36.365088 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0
+[0m21:41:36.366125 [info ] [Thread-1 (]: 18 of 30 START test source_unique_dvdrental_data_address_address_id ............ [RUN]
+[0m21:41:36.367115 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_actor_info_actor_id.0edcad9fb2, now test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0)
+[0m21:41:36.368116 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0
+[0m21:41:36.373126 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0"
+[0m21:41:36.376093 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0 (compile): 21:41:36.368116 => 21:41:36.375091
+[0m21:41:36.377092 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0
+[0m21:41:36.381151 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0"
+[0m21:41:36.383116 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0"
+[0m21:41:36.384090 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    address_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.address
+where address_id is not null
+group by address_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:36.385091 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:37.018132 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:37.020281 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0 (execute): 21:41:36.377092 => 21:41:37.020281
+[0m21:41:37.021278 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0: Close
+[0m21:41:37.074535 [info ] [Thread-1 (]: 18 of 30 PASS source_unique_dvdrental_data_address_address_id .................. [[32mPASS[0m in 0.71s]
+[0m21:41:37.077217 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0
+[0m21:41:37.078984 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0
+[0m21:41:37.080700 [info ] [Thread-1 (]: 19 of 30 START test source_unique_dvdrental_data_category_category_id .......... [RUN]
+[0m21:41:37.083696 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_address_address_id.e43b50aea0, now test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0)
+[0m21:41:37.085728 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0
+[0m21:41:37.095730 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0"
+[0m21:41:37.097731 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0 (compile): 21:41:37.085728 => 21:41:37.097731
+[0m21:41:37.099736 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0
+[0m21:41:37.104729 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0"
+[0m21:41:37.107748 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0"
+[0m21:41:37.108067 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    category_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.category
+where category_id is not null
+group by category_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:37.108729 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:37.798747 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:37.801643 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0 (execute): 21:41:37.099736 => 21:41:37.801081
+[0m21:41:37.802153 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0: Close
+[0m21:41:37.867757 [info ] [Thread-1 (]: 19 of 30 PASS source_unique_dvdrental_data_category_category_id ................ [[32mPASS[0m in 0.78s]
+[0m21:41:37.869823 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0
+[0m21:41:37.870861 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464
+[0m21:41:37.871862 [info ] [Thread-1 (]: 20 of 30 START test source_unique_dvdrental_data_city_city_id .................. [RUN]
+[0m21:41:37.873858 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_category_category_id.d16112e6e0, now test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464)
+[0m21:41:37.874890 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464
+[0m21:41:37.884878 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464"
+[0m21:41:37.886861 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464 (compile): 21:41:37.875930 => 21:41:37.885858
+[0m21:41:37.888864 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464
+[0m21:41:37.893859 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464"
+[0m21:41:37.896865 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464"
+[0m21:41:37.897859 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    city_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.city
+where city_id is not null
+group by city_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:37.897859 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:38.452127 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:38.455083 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464 (execute): 21:41:37.889863 => 21:41:38.454118
+[0m21:41:38.455083 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464: Close
+[0m21:41:38.510181 [info ] [Thread-1 (]: 20 of 30 PASS source_unique_dvdrental_data_city_city_id ........................ [[32mPASS[0m in 0.64s]
+[0m21:41:38.512557 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464
+[0m21:41:38.512557 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989
+[0m21:41:38.513582 [info ] [Thread-1 (]: 21 of 30 START test source_unique_dvdrental_data_country_country_id ............ [RUN]
+[0m21:41:38.515559 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_city_city_id.e7340c1464, now test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989)
+[0m21:41:38.515559 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989
+[0m21:41:38.521561 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989"
+[0m21:41:38.523560 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989 (compile): 21:41:38.516574 => 21:41:38.522596
+[0m21:41:38.523560 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989
+[0m21:41:38.527563 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989"
+[0m21:41:38.529570 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989"
+[0m21:41:38.530575 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    country_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.country
+where country_id is not null
+group by country_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:38.530575 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:39.165884 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:39.167882 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989 (execute): 21:41:38.524569 => 21:41:39.167882
+[0m21:41:39.167882 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989: Close
+[0m21:41:39.270045 [info ] [Thread-1 (]: 21 of 30 PASS source_unique_dvdrental_data_country_country_id .................. [[32mPASS[0m in 0.76s]
+[0m21:41:39.272083 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989
+[0m21:41:39.272083 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a
+[0m21:41:39.273082 [info ] [Thread-1 (]: 22 of 30 START test source_unique_dvdrental_data_customer_customer_id .......... [RUN]
+[0m21:41:39.274124 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_country_country_id.cdb416c989, now test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a)
+[0m21:41:39.275082 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a
+[0m21:41:39.280083 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a"
+[0m21:41:39.282106 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a (compile): 21:41:39.275082 => 21:41:39.282106
+[0m21:41:39.283082 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a
+[0m21:41:39.289081 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a"
+[0m21:41:39.292081 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a"
+[0m21:41:39.293102 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.customer
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:39.293102 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:39.932226 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:39.934223 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a (execute): 21:41:39.284099 => 21:41:39.934223
+[0m21:41:39.935191 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a: Close
+[0m21:41:40.016972 [info ] [Thread-1 (]: 22 of 30 PASS source_unique_dvdrental_data_customer_customer_id ................ [[32mPASS[0m in 0.74s]
+[0m21:41:40.018971 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a
+[0m21:41:40.019101 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5
+[0m21:41:40.020123 [info ] [Thread-1 (]: 23 of 30 START test source_unique_dvdrental_data_film_actor_actor_id ........... [RUN]
+[0m21:41:40.021127 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_customer_customer_id.1ef11d811a, now test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5)
+[0m21:41:40.022122 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5
+[0m21:41:40.026122 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5"
+[0m21:41:40.029130 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5 (compile): 21:41:40.022122 => 21:41:40.028122
+[0m21:41:40.029130 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5
+[0m21:41:40.033122 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5"
+[0m21:41:40.036131 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5"
+[0m21:41:40.036131 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    actor_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.film_actor
+where actor_id is not null
+group by actor_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:40.037121 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:40.760039 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:40.762096 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5 (execute): 21:41:40.030136 => 21:41:40.762096
+[0m21:41:40.763119 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5: Close
+[0m21:41:40.843067 [error] [Thread-1 (]: 23 of 30 FAIL 200 source_unique_dvdrental_data_film_actor_actor_id ............. [[31mFAIL 200[0m in 0.82s]
+[0m21:41:40.844039 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5
+[0m21:41:40.845048 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176
+[0m21:41:40.846030 [info ] [Thread-1 (]: 24 of 30 START test source_unique_dvdrental_data_film_category_category_id ..... [RUN]
+[0m21:41:40.847049 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_film_actor_actor_id.5ac081bec5, now test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176)
+[0m21:41:40.848070 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176
+[0m21:41:40.854033 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176"
+[0m21:41:40.856031 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176 (compile): 21:41:40.849032 => 21:41:40.856031
+[0m21:41:40.857029 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176
+[0m21:41:40.860076 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176"
+[0m21:41:40.862060 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176"
+[0m21:41:40.863070 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    category_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.film_category
+where category_id is not null
+group by category_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:40.864056 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:41.554627 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:41.556621 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176 (execute): 21:41:40.857029 => 21:41:41.556621
+[0m21:41:41.557621 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176: Close
+[0m21:41:41.639383 [error] [Thread-1 (]: 24 of 30 FAIL 16 source_unique_dvdrental_data_film_category_category_id ........ [[31mFAIL 16[0m in 0.79s]
+[0m21:41:41.641442 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176
+[0m21:41:41.641442 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f
+[0m21:41:41.642459 [info ] [Thread-1 (]: 25 of 30 START test source_unique_dvdrental_data_film_film_id .................. [RUN]
+[0m21:41:41.644457 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_film_category_category_id.4cccc5b176, now test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f)
+[0m21:41:41.644457 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f
+[0m21:41:41.650425 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f"
+[0m21:41:41.654460 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f (compile): 21:41:41.645428 => 21:41:41.653424
+[0m21:41:41.655434 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f
+[0m21:41:41.659457 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f"
+[0m21:41:41.662426 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f"
+[0m21:41:41.663423 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    film_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.film
+where film_id is not null
+group by film_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:41.664421 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:42.193542 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:42.195538 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f (execute): 21:41:41.655434 => 21:41:42.195538
+[0m21:41:42.196557 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f: Close
+[0m21:41:42.265394 [info ] [Thread-1 (]: 25 of 30 PASS source_unique_dvdrental_data_film_film_id ........................ [[32mPASS[0m in 0.62s]
+[0m21:41:42.267361 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f
+[0m21:41:42.268358 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6
+[0m21:41:42.268358 [info ] [Thread-1 (]: 26 of 30 START test source_unique_dvdrental_data_inventory_inventory_id ........ [RUN]
+[0m21:41:42.270364 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_film_film_id.a03e91300f, now test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6)
+[0m21:41:42.270364 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6
+[0m21:41:42.276398 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6"
+[0m21:41:42.278358 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6 (compile): 21:41:42.271358 => 21:41:42.277394
+[0m21:41:42.279375 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6
+[0m21:41:42.283359 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6"
+[0m21:41:42.285354 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6"
+[0m21:41:42.286356 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    inventory_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.inventory
+where inventory_id is not null
+group by inventory_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:42.287369 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:42.825305 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:42.828304 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6 (execute): 21:41:42.279375 => 21:41:42.828304
+[0m21:41:42.829507 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6: Close
+[0m21:41:42.885795 [info ] [Thread-1 (]: 26 of 30 PASS source_unique_dvdrental_data_inventory_inventory_id .............. [[32mPASS[0m in 0.62s]
+[0m21:41:42.888799 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6
+[0m21:41:42.889798 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350
+[0m21:41:42.889798 [info ] [Thread-1 (]: 27 of 30 START test source_unique_dvdrental_data_payment_payment_id ............ [RUN]
+[0m21:41:42.891799 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_inventory_inventory_id.bba7482ee6, now test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350)
+[0m21:41:42.892797 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350
+[0m21:41:42.898802 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350"
+[0m21:41:42.900798 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350 (compile): 21:41:42.893795 => 21:41:42.899799
+[0m21:41:42.900798 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350
+[0m21:41:42.904796 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350"
+[0m21:41:42.906797 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350"
+[0m21:41:42.906797 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    payment_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.payment
+where payment_id is not null
+group by payment_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:42.907811 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:43.455587 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:43.458620 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350 (execute): 21:41:42.901796 => 21:41:43.458620
+[0m21:41:43.458620 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350: Close
+[0m21:41:43.588808 [info ] [Thread-1 (]: 27 of 30 PASS source_unique_dvdrental_data_payment_payment_id .................. [[32mPASS[0m in 0.70s]
+[0m21:41:43.590020 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350
+[0m21:41:43.591021 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c
+[0m21:41:43.592022 [info ] [Thread-1 (]: 28 of 30 START test source_unique_dvdrental_data_rental_rental_id .............. [RUN]
+[0m21:41:43.593026 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_payment_payment_id.b197046350, now test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c)
+[0m21:41:43.594056 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c
+[0m21:41:43.600024 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c"
+[0m21:41:43.602023 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c (compile): 21:41:43.594056 => 21:41:43.601024
+[0m21:41:43.603022 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c
+[0m21:41:43.608298 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c"
+[0m21:41:43.610262 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c"
+[0m21:41:43.610262 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    rental_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.rental
+where rental_id is not null
+group by rental_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:43.611263 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:44.279271 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:44.281309 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c (execute): 21:41:43.604251 => 21:41:44.281309
+[0m21:41:44.282293 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c: Close
+[0m21:41:44.355336 [info ] [Thread-1 (]: 28 of 30 PASS source_unique_dvdrental_data_rental_rental_id .................... [[32mPASS[0m in 0.76s]
+[0m21:41:44.357318 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c
+[0m21:41:44.358299 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7
+[0m21:41:44.359299 [info ] [Thread-1 (]: 29 of 30 START test source_unique_dvdrental_data_staff_staff_id ................ [RUN]
+[0m21:41:44.360310 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_rental_rental_id.483116486c, now test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7)
+[0m21:41:44.361300 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7
+[0m21:41:44.366342 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7"
+[0m21:41:44.369319 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7 (compile): 21:41:44.361300 => 21:41:44.368322
+[0m21:41:44.370315 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7
+[0m21:41:44.375345 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7"
+[0m21:41:44.378313 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7"
+[0m21:41:44.379335 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    staff_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.staff
+where staff_id is not null
+group by staff_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:44.379335 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:45.101183 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:45.103181 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7 (execute): 21:41:44.370315 => 21:41:45.103181
+[0m21:41:45.103181 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7: Close
+[0m21:41:45.176681 [info ] [Thread-1 (]: 29 of 30 PASS source_unique_dvdrental_data_staff_staff_id ...................... [[32mPASS[0m in 0.82s]
+[0m21:41:45.178694 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7
+[0m21:41:45.179680 [debug] [Thread-1 (]: Began running node test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c
+[0m21:41:45.179680 [info ] [Thread-1 (]: 30 of 30 START test source_unique_dvdrental_data_store_store_id ................ [RUN]
+[0m21:41:45.181680 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dvdrental_project.source_unique_dvdrental_data_staff_staff_id.785a2c98b7, now test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c)
+[0m21:41:45.182680 [debug] [Thread-1 (]: Began compiling node test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c
+[0m21:41:45.189706 [debug] [Thread-1 (]: Writing injected SQL for node "test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c"
+[0m21:41:45.192682 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c (compile): 21:41:45.182680 => 21:41:45.191681
+[0m21:41:45.194722 [debug] [Thread-1 (]: Began executing node test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c
+[0m21:41:45.201682 [debug] [Thread-1 (]: Writing runtime sql for node "test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c"
+[0m21:41:45.206250 [debug] [Thread-1 (]: Using snowflake connection "test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c"
+[0m21:41:45.206683 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    store_id as unique_field,
+    count(*) as n_records
+
+from dvdrental.dvdrental.store
+where store_id is not null
+group by store_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:41:45.207682 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:46.020183 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:41:46.022354 [debug] [Thread-1 (]: Timing info for test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c (execute): 21:41:45.194722 => 21:41:46.021334
+[0m21:41:46.022354 [debug] [Thread-1 (]: On test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c: Close
+[0m21:41:46.082722 [info ] [Thread-1 (]: 30 of 30 PASS source_unique_dvdrental_data_store_store_id ...................... [[32mPASS[0m in 0.90s]
+[0m21:41:46.084714 [debug] [Thread-1 (]: Finished running node test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c
+[0m21:41:46.087701 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:41:46.088704 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV_DEV' was properly closed.
+[0m21:41:46.088704 [debug] [MainThread]: Connection 'test.dvdrental_project.source_unique_dvdrental_data_store_store_id.234baf803c' was properly closed.
+[0m21:41:46.089701 [info ] [MainThread]: 
+[0m21:41:46.090718 [info ] [MainThread]: Finished running 30 tests in 0 hours 0 minutes and 24.02 seconds (24.02s).
+[0m21:41:46.100711 [debug] [MainThread]: Command end result
+[0m21:41:46.123701 [info ] [MainThread]: 
+[0m21:41:46.126715 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m21:41:46.128705 [info ] [MainThread]: 
+[0m21:41:46.130703 [error] [MainThread]: [31mFailure in test source_unique_dvdrental_data_film_actor_actor_id (models\analytics\schema.yml)[0m
+[0m21:41:46.132700 [error] [MainThread]:   Got 200 results, configured to fail if != 0
+[0m21:41:46.133701 [info ] [MainThread]: 
+[0m21:41:46.134699 [info ] [MainThread]:   compiled Code at target\compiled\dvdrental_project\models\analytics\schema.yml\source_unique_dvdrental_data_film_actor_actor_id.sql
+[0m21:41:46.135701 [info ] [MainThread]: 
+[0m21:41:46.136704 [error] [MainThread]: [31mFailure in test source_unique_dvdrental_data_film_category_category_id (models\analytics\schema.yml)[0m
+[0m21:41:46.137701 [error] [MainThread]:   Got 16 results, configured to fail if != 0
+[0m21:41:46.138703 [info ] [MainThread]: 
+[0m21:41:46.139703 [info ] [MainThread]:   compiled Code at target\compiled\dvdrental_project\models\analytics\schema.yml\source_unique_dvdrental_data_film_category_category_id.sql
+[0m21:41:46.141701 [info ] [MainThread]: 
+[0m21:41:46.143708 [info ] [MainThread]: Done. PASS=28 WARN=0 ERROR=2 SKIP=0 TOTAL=30
+[0m21:41:46.145703 [debug] [MainThread]: Command `dbt test` failed at 21:41:46.145703 after 24.46 seconds
+[0m21:41:46.146702 [debug] [MainThread]: Flushing usage events
+[0m21:43:48.874219 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 21:43:48.887481 | b5d76b51-4150-48da-bf2a-50ed09f9664f ==============================
+[0m21:43:48.887481 [info ] [MainThread]: Running with dbt=1.5.2
+[0m21:43:48.888452 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dvdrental_project\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:43:49.159457 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m21:43:49.172484 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m21:43:49.244484 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:43:49.244484 [debug] [MainThread]: Partial parsing: updated file: dvdrental_project://models\analytics\high_in_demand.sql
+[0m21:43:49.260485 [debug] [MainThread]: 1699: static parser successfully parsed analytics\high_in_demand.sql
+[0m21:43:49.292481 [info ] [MainThread]: Found 4 models, 30 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 15 sources, 0 exposures, 0 metrics, 0 groups
+[0m21:43:49.295483 [info ] [MainThread]: 
+[0m21:43:49.296481 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:43:49.298482 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV'
+[0m21:43:49.310754 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV"
+[0m21:43:49.311756 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV"} */
+show terse schemas in database DVDRENTAL_DEV
+    limit 10000
+[0m21:43:49.311756 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:43:50.128737 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m21:43:50.130051 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: Close
+[0m21:43:50.207560 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV_DEV'
+[0m21:43:50.213782 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV_DEV"
+[0m21:43:50.214782 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV_DEV"} */
+show terse objects in DVDRENTAL_DEV.DEV
+[0m21:43:50.214782 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:43:50.792163 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m21:43:50.794129 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: Close
+[0m21:43:50.868639 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:43:50.868639 [info ] [MainThread]: 
+[0m21:43:50.876640 [debug] [Thread-1 (]: Began running node model.dvdrental_project.high_in_demand
+[0m21:43:50.878638 [info ] [Thread-1 (]: 1 of 4 START sql table model DEV.high_in_demand ................................ [RUN]
+[0m21:43:50.879640 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dvdrental_project.high_in_demand'
+[0m21:43:50.880639 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.high_in_demand
+[0m21:43:50.884638 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.high_in_demand"
+[0m21:43:50.886638 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.high_in_demand (compile): 21:43:50.880639 => 21:43:50.885638
+[0m21:43:50.886638 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.high_in_demand
+[0m21:43:50.917639 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.high_in_demand"
+[0m21:43:50.920645 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.high_in_demand"
+[0m21:43:50.921685 [debug] [Thread-1 (]: On model.dvdrental_project.high_in_demand: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.high_in_demand"} */
+create or replace transient table DVDRENTAL_DEV.DEV.high_in_demand
+         as
+        (SELECT 
+        country, 
+        COUNT(DISTINCT customer_id) AS customer_base,
+        SUM(amount) AS total_sales
+FROM dvdrental.dvdrental.country
+JOIN dvdrental.dvdrental.city
+USING(country_id)
+JOIN dvdrental.dvdrental.address
+USING(city_id)
+JOIN dvdrental.dvdrental.customer
+USING(address_id)
+JOIN dvdrental.dvdrental.payment
+USING(customer_id)
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 20
+        );
+[0m21:43:50.921685 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:43:52.226442 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:43:52.249226 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.high_in_demand (execute): 21:43:50.886638 => 21:43:52.248981
+[0m21:43:52.249226 [debug] [Thread-1 (]: On model.dvdrental_project.high_in_demand: Close
+[0m21:43:52.324200 [info ] [Thread-1 (]: 1 of 4 OK created sql table model DEV.high_in_demand ........................... [[32mSUCCESS 1[0m in 1.44s]
+[0m21:43:52.325164 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.high_in_demand
+[0m21:43:52.326200 [debug] [Thread-1 (]: Began running node model.dvdrental_project.rent_demand
+[0m21:43:52.327164 [info ] [Thread-1 (]: 2 of 4 START sql table model DEV.rent_demand ................................... [RUN]
+[0m21:43:52.328164 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dvdrental_project.high_in_demand, now model.dvdrental_project.rent_demand)
+[0m21:43:52.328164 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.rent_demand
+[0m21:43:52.334164 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.rent_demand"
+[0m21:43:52.336169 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rent_demand (compile): 21:43:52.329162 => 21:43:52.335171
+[0m21:43:52.337172 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.rent_demand
+[0m21:43:52.340171 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.rent_demand"
+[0m21:43:52.343162 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.rent_demand"
+[0m21:43:52.343162 [debug] [Thread-1 (]: On model.dvdrental_project.rent_demand: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.rent_demand"} */
+create or replace transient table DVDRENTAL_DEV.DEV.rent_demand
+         as
+        (with rent_demand as (
+select 
+    c.name as genre,
+    count(cs.customer_id) as total_rent_demand
+from dvdrental.dvdrental.category as c
+join dvdrental.dvdrental.film_category as fc
+using(category_id)
+join dvdrental.dvdrental.film as f 
+using(film_id)
+join dvdrental.dvdrental.inventory as i
+using(film_id)
+join dvdrental.dvdrental.rental as r
+using(inventory_id)
+join dvdrental.dvdrental.customer cs
+using(customer_id)
+group by 1
+order BY 2 DESC)
+
+select * from rent_demand
+        );
+[0m21:43:52.344198 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:43:54.422544 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m21:43:54.425577 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rent_demand (execute): 21:43:52.337172 => 21:43:54.424578
+[0m21:43:54.425577 [debug] [Thread-1 (]: On model.dvdrental_project.rent_demand: Close
+[0m21:43:54.485509 [info ] [Thread-1 (]: 2 of 4 OK created sql table model DEV.rent_demand .............................. [[32mSUCCESS 1[0m in 2.16s]
+[0m21:43:54.487485 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.rent_demand
+[0m21:43:54.487485 [debug] [Thread-1 (]: Began running node model.dvdrental_project.rental_performance
+[0m21:43:54.488478 [info ] [Thread-1 (]: 3 of 4 START sql table model DEV.rental_performance ............................ [RUN]
+[0m21:43:54.489476 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dvdrental_project.rent_demand, now model.dvdrental_project.rental_performance)
+[0m21:43:54.490476 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.rental_performance
+[0m21:43:54.494475 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.rental_performance"
+[0m21:43:54.495489 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rental_performance (compile): 21:43:54.490476 => 21:43:54.495489
+[0m21:43:54.496472 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.rental_performance
+[0m21:43:54.501475 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.rental_performance"
+[0m21:43:54.503475 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.rental_performance"
+[0m21:43:54.503475 [debug] [Thread-1 (]: On model.dvdrental_project.rental_performance: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.rental_performance"} */
+create or replace transient table DVDRENTAL_DEV.DEV.rental_performance
+         as
+        (with daily_retal_date_check as(
+select 
+    *, 
+    DATEDIFF(day, return_date::date, rental_date::date) as date_difference
+from dvdrental.dvdrental.rental),
+
+rental_performance as (
+    select f.film_id,
+      case 
+          when rental_duration > date_difference then 'Returned early'
+          when rental_duration = date_difference then 'Returned on time'
+          else 'Returned late'
+      end as return_status
+      from dvdrental.dvdrental.film as f
+      join dvdrental.dvdrental.inventory as i
+      using(film_id)
+      join daily_retal_date_check
+      using(inventory_id)), 
+      
+final as (
+select return_status, count(film_id) total_films
+from rental_performance
+group by 1)
+
+select * from final
+        );
+[0m21:43:54.504475 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:43:55.410665 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:43:55.414693 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rental_performance (execute): 21:43:54.497489 => 21:43:55.413678
+[0m21:43:55.415674 [debug] [Thread-1 (]: On model.dvdrental_project.rental_performance: Close
+[0m21:43:55.473891 [info ] [Thread-1 (]: 3 of 4 OK created sql table model DEV.rental_performance ....................... [[32mSUCCESS 1[0m in 0.98s]
+[0m21:43:55.475867 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.rental_performance
+[0m21:43:55.476890 [debug] [Thread-1 (]: Began running node model.dvdrental_project.top_loyal_customers
+[0m21:43:55.476890 [info ] [Thread-1 (]: 4 of 4 START sql table model DEV.top_loyal_customers ........................... [RUN]
+[0m21:43:55.478860 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dvdrental_project.rental_performance, now model.dvdrental_project.top_loyal_customers)
+[0m21:43:55.478860 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.top_loyal_customers
+[0m21:43:55.485857 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.top_loyal_customers"
+[0m21:43:55.487858 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (compile): 21:43:55.479890 => 21:43:55.486882
+[0m21:43:55.487858 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.top_loyal_customers
+[0m21:43:55.491858 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.top_loyal_customers"
+[0m21:43:55.494857 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.top_loyal_customers"
+[0m21:43:55.495855 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.top_loyal_customers"} */
+create or replace transient table DVDRENTAL_DEV.DEV.top_loyal_customers
+         as
+        (with top_loyal_customers as (
+SELECT first_name ||' '|| last_name AS full_name, email, address, phone, city, country, sum(amount) AS total_purchase
+FROM dvdrental.dvdrental.customer as cs
+JOIN dvdrental.dvdrental.address as  ad
+ON cs.address_id = ad.address_id
+JOIN dvdrental.dvdrental.city as ct
+ON ad.city_id = ct.city_id
+JOIN dvdrental.dvdrental.country as cy
+ON ct.country_id = cy.country_id
+JOIN dvdrental.dvdrental.payment as pm
+ON cs.customer_id = pm.customer_id
+GROUP BY 1, 2, 3, 4, 5, 6
+),
+
+final as (
+select * from top_loyal_customers
+ORDER BY total_purchase DESC
+LIMIT 10
+)
+
+select * from final
+        );
+[0m21:43:55.496855 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:43:56.473134 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:43:56.475129 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (execute): 21:43:55.488861 => 21:43:56.475129
+[0m21:43:56.476128 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: Close
+[0m21:43:56.534201 [info ] [Thread-1 (]: 4 of 4 OK created sql table model DEV.top_loyal_customers ...................... [[32mSUCCESS 1[0m in 1.06s]
+[0m21:43:56.534819 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.top_loyal_customers
+[0m21:43:56.536829 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:43:56.537830 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV' was properly closed.
+[0m21:43:56.537830 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV_DEV' was properly closed.
+[0m21:43:56.538864 [debug] [MainThread]: Connection 'model.dvdrental_project.top_loyal_customers' was properly closed.
+[0m21:43:56.538864 [info ] [MainThread]: 
+[0m21:43:56.539864 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 7.24 seconds (7.24s).
+[0m21:43:56.542831 [debug] [MainThread]: Command end result
+[0m21:43:56.551830 [info ] [MainThread]: 
+[0m21:43:56.552829 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:43:56.553829 [info ] [MainThread]: 
+[0m21:43:56.553829 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m21:43:56.555019 [debug] [MainThread]: Command `dbt run` succeeded at 21:43:56.555019 after 7.69 seconds
+[0m21:43:56.556065 [debug] [MainThread]: Flushing usage events
+[0m21:51:06.188640 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 21:51:06.201214 | 38aa4800-c5f7-4e02-a311-f31816153409 ==============================
+[0m21:51:06.201214 [info ] [MainThread]: Running with dbt=1.5.2
+[0m21:51:06.203212 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RaymondOwhondah\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\RaymondOwhondah\\Desktop\\Analytics Engineering Fundamentals\\dvdrental_project\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:51:06.445187 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m21:51:06.456185 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m21:51:06.530220 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:51:06.531218 [debug] [MainThread]: Partial parsing: updated file: dvdrental_project://models\analytics\high_in_demand.sql
+[0m21:51:06.546458 [debug] [MainThread]: 1699: static parser successfully parsed analytics\high_in_demand.sql
+[0m21:51:06.579411 [info ] [MainThread]: Found 4 models, 30 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 15 sources, 0 exposures, 0 metrics, 0 groups
+[0m21:51:06.581437 [info ] [MainThread]: 
+[0m21:51:06.583437 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:51:06.584436 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV'
+[0m21:51:06.600469 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV"
+[0m21:51:06.600469 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV"} */
+show terse schemas in database DVDRENTAL_DEV
+    limit 10000
+[0m21:51:06.601468 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:51:07.700652 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m21:51:07.702652 [debug] [ThreadPool]: On list_DVDRENTAL_DEV: Close
+[0m21:51:07.794703 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DVDRENTAL_DEV_DEV'
+[0m21:51:07.800907 [debug] [ThreadPool]: Using snowflake connection "list_DVDRENTAL_DEV_DEV"
+[0m21:51:07.800907 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "connection_name": "list_DVDRENTAL_DEV_DEV"} */
+show terse objects in DVDRENTAL_DEV.DEV
+[0m21:51:07.801930 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:51:08.381771 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m21:51:08.383767 [debug] [ThreadPool]: On list_DVDRENTAL_DEV_DEV: Close
+[0m21:51:08.492506 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:51:08.493509 [info ] [MainThread]: 
+[0m21:51:08.499506 [debug] [Thread-1 (]: Began running node model.dvdrental_project.high_in_demand
+[0m21:51:08.500508 [info ] [Thread-1 (]: 1 of 4 START sql table model DEV.high_in_demand ................................ [RUN]
+[0m21:51:08.502507 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dvdrental_project.high_in_demand'
+[0m21:51:08.502507 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.high_in_demand
+[0m21:51:08.506544 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.high_in_demand"
+[0m21:51:08.508526 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.high_in_demand (compile): 21:51:08.503545 => 21:51:08.507540
+[0m21:51:08.508526 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.high_in_demand
+[0m21:51:08.540544 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.high_in_demand"
+[0m21:51:08.542506 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.high_in_demand"
+[0m21:51:08.543506 [debug] [Thread-1 (]: On model.dvdrental_project.high_in_demand: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.high_in_demand"} */
+create or replace transient table DVDRENTAL_DEV.DEV.high_in_demand
+         as
+        (SELECT 
+        country, 
+        COUNT(DISTINCT customer_id) AS customer_base,
+        SUM(amount) AS total_sales
+FROM dvdrental.dvdrental.country
+JOIN dvdrental.dvdrental.city
+USING(country_id)
+JOIN dvdrental.dvdrental.address
+USING(city_id)
+JOIN dvdrental.dvdrental.customer
+USING(address_id)
+JOIN dvdrental.dvdrental.payment
+USING(customer_id)
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 15
+        );
+[0m21:51:08.543506 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:51:09.816854 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:51:09.839848 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.high_in_demand (execute): 21:51:08.509506 => 21:51:09.839848
+[0m21:51:09.840846 [debug] [Thread-1 (]: On model.dvdrental_project.high_in_demand: Close
+[0m21:51:09.952792 [info ] [Thread-1 (]: 1 of 4 OK created sql table model DEV.high_in_demand ........................... [[32mSUCCESS 1[0m in 1.45s]
+[0m21:51:09.954761 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.high_in_demand
+[0m21:51:09.954761 [debug] [Thread-1 (]: Began running node model.dvdrental_project.rent_demand
+[0m21:51:09.955767 [info ] [Thread-1 (]: 2 of 4 START sql table model DEV.rent_demand ................................... [RUN]
+[0m21:51:09.956759 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dvdrental_project.high_in_demand, now model.dvdrental_project.rent_demand)
+[0m21:51:09.957793 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.rent_demand
+[0m21:51:09.962795 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.rent_demand"
+[0m21:51:09.963793 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rent_demand (compile): 21:51:09.957793 => 21:51:09.963793
+[0m21:51:09.964771 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.rent_demand
+[0m21:51:09.967793 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.rent_demand"
+[0m21:51:09.971759 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.rent_demand"
+[0m21:51:09.972801 [debug] [Thread-1 (]: On model.dvdrental_project.rent_demand: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.rent_demand"} */
+create or replace transient table DVDRENTAL_DEV.DEV.rent_demand
+         as
+        (with rent_demand as (
+select 
+    c.name as genre,
+    count(cs.customer_id) as total_rent_demand
+from dvdrental.dvdrental.category as c
+join dvdrental.dvdrental.film_category as fc
+using(category_id)
+join dvdrental.dvdrental.film as f 
+using(film_id)
+join dvdrental.dvdrental.inventory as i
+using(film_id)
+join dvdrental.dvdrental.rental as r
+using(inventory_id)
+join dvdrental.dvdrental.customer cs
+using(customer_id)
+group by 1
+order BY 2 DESC)
+
+select * from rent_demand
+        );
+[0m21:51:09.972801 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:51:11.316502 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:51:11.319641 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rent_demand (execute): 21:51:09.964771 => 21:51:11.319641
+[0m21:51:11.319641 [debug] [Thread-1 (]: On model.dvdrental_project.rent_demand: Close
+[0m21:51:11.389455 [info ] [Thread-1 (]: 2 of 4 OK created sql table model DEV.rent_demand .............................. [[32mSUCCESS 1[0m in 1.43s]
+[0m21:51:11.391469 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.rent_demand
+[0m21:51:11.392469 [debug] [Thread-1 (]: Began running node model.dvdrental_project.rental_performance
+[0m21:51:11.393512 [info ] [Thread-1 (]: 3 of 4 START sql table model DEV.rental_performance ............................ [RUN]
+[0m21:51:11.394462 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dvdrental_project.rent_demand, now model.dvdrental_project.rental_performance)
+[0m21:51:11.395492 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.rental_performance
+[0m21:51:11.399458 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.rental_performance"
+[0m21:51:11.402461 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rental_performance (compile): 21:51:11.395492 => 21:51:11.401457
+[0m21:51:11.402461 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.rental_performance
+[0m21:51:11.406469 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.rental_performance"
+[0m21:51:11.409459 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.rental_performance"
+[0m21:51:11.410460 [debug] [Thread-1 (]: On model.dvdrental_project.rental_performance: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.rental_performance"} */
+create or replace transient table DVDRENTAL_DEV.DEV.rental_performance
+         as
+        (with daily_retal_date_check as(
+select 
+    *, 
+    DATEDIFF(day, return_date::date, rental_date::date) as date_difference
+from dvdrental.dvdrental.rental),
+
+rental_performance as (
+    select f.film_id,
+      case 
+          when rental_duration > date_difference then 'Returned early'
+          when rental_duration = date_difference then 'Returned on time'
+          else 'Returned late'
+      end as return_status
+      from dvdrental.dvdrental.film as f
+      join dvdrental.dvdrental.inventory as i
+      using(film_id)
+      join daily_retal_date_check
+      using(inventory_id)), 
+      
+final as (
+select return_status, count(film_id) total_films
+from rental_performance
+group by 1)
+
+select * from final
+        );
+[0m21:51:11.410460 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:51:12.459658 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:51:12.461955 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.rental_performance (execute): 21:51:11.403458 => 21:51:12.461955
+[0m21:51:12.462954 [debug] [Thread-1 (]: On model.dvdrental_project.rental_performance: Close
+[0m21:51:12.515033 [info ] [Thread-1 (]: 3 of 4 OK created sql table model DEV.rental_performance ....................... [[32mSUCCESS 1[0m in 1.12s]
+[0m21:51:12.516042 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.rental_performance
+[0m21:51:12.517029 [debug] [Thread-1 (]: Began running node model.dvdrental_project.top_loyal_customers
+[0m21:51:12.518030 [info ] [Thread-1 (]: 4 of 4 START sql table model DEV.top_loyal_customers ........................... [RUN]
+[0m21:51:12.520029 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dvdrental_project.rental_performance, now model.dvdrental_project.top_loyal_customers)
+[0m21:51:12.520029 [debug] [Thread-1 (]: Began compiling node model.dvdrental_project.top_loyal_customers
+[0m21:51:12.526069 [debug] [Thread-1 (]: Writing injected SQL for node "model.dvdrental_project.top_loyal_customers"
+[0m21:51:12.528030 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (compile): 21:51:12.521028 => 21:51:12.527031
+[0m21:51:12.529046 [debug] [Thread-1 (]: Began executing node model.dvdrental_project.top_loyal_customers
+[0m21:51:12.534041 [debug] [Thread-1 (]: Writing runtime sql for node "model.dvdrental_project.top_loyal_customers"
+[0m21:51:12.537068 [debug] [Thread-1 (]: Using snowflake connection "model.dvdrental_project.top_loyal_customers"
+[0m21:51:12.538043 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dvdrental_project", "target_name": "dev", "node_id": "model.dvdrental_project.top_loyal_customers"} */
+create or replace transient table DVDRENTAL_DEV.DEV.top_loyal_customers
+         as
+        (with top_loyal_customers as (
+SELECT first_name ||' '|| last_name AS full_name, email, address, phone, city, country, sum(amount) AS total_purchase
+FROM dvdrental.dvdrental.customer as cs
+JOIN dvdrental.dvdrental.address as  ad
+ON cs.address_id = ad.address_id
+JOIN dvdrental.dvdrental.city as ct
+ON ad.city_id = ct.city_id
+JOIN dvdrental.dvdrental.country as cy
+ON ct.country_id = cy.country_id
+JOIN dvdrental.dvdrental.payment as pm
+ON cs.customer_id = pm.customer_id
+GROUP BY 1, 2, 3, 4, 5, 6
+),
+
+final as (
+select * from top_loyal_customers
+ORDER BY total_purchase DESC
+LIMIT 10
+)
+
+select * from final
+        );
+[0m21:51:12.538043 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:51:13.519980 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m21:51:13.522983 [debug] [Thread-1 (]: Timing info for model.dvdrental_project.top_loyal_customers (execute): 21:51:12.529046 => 21:51:13.521983
+[0m21:51:13.522983 [debug] [Thread-1 (]: On model.dvdrental_project.top_loyal_customers: Close
+[0m21:51:13.600481 [info ] [Thread-1 (]: 4 of 4 OK created sql table model DEV.top_loyal_customers ...................... [[32mSUCCESS 1[0m in 1.08s]
+[0m21:51:13.601444 [debug] [Thread-1 (]: Finished running node model.dvdrental_project.top_loyal_customers
+[0m21:51:13.603445 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:51:13.604447 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV' was properly closed.
+[0m21:51:13.604447 [debug] [MainThread]: Connection 'list_DVDRENTAL_DEV_DEV' was properly closed.
+[0m21:51:13.604447 [debug] [MainThread]: Connection 'model.dvdrental_project.top_loyal_customers' was properly closed.
+[0m21:51:13.605447 [info ] [MainThread]: 
+[0m21:51:13.606447 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 7.02 seconds (7.02s).
+[0m21:51:13.607445 [debug] [MainThread]: Command end result
+[0m21:51:13.618450 [info ] [MainThread]: 
+[0m21:51:13.620448 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:51:13.621444 [info ] [MainThread]: 
+[0m21:51:13.622430 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m21:51:13.623442 [debug] [MainThread]: Command `dbt run` succeeded at 21:51:13.623442 after 7.44 seconds
+[0m21:51:13.624467 [debug] [MainThread]: Flushing usage events
